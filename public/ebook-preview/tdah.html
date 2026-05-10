@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>TDAH na Vida Real — Jéssica Souto Maior</title>
+<title>7 Sistemas que Funcionam pra Cérebro com TDAH · Raiz Psi</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700;9..144,800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -18,25 +18,24 @@
     --linha: #D8C9B0;
     --destaque: #D4915A;
     --verde-musgo: #6B7A5A;
+    --rosa-suave: #E8C5B5;
   }
 
   * { box-sizing: border-box; margin: 0; padding: 0; }
-
   html { background: #2A2018; }
 
   body {
     font-family: 'Fraunces', Georgia, serif;
     color: var(--tinta);
-    line-height: 1.65;
+    line-height: 1.6;
     font-size: 11pt;
     -webkit-font-smoothing: antialiased;
   }
 
-  /* PAGE FRAME for digital preview */
   .page {
     width: 148mm;
     min-height: 210mm;
-    padding: 18mm 16mm 18mm 16mm;
+    padding: 18mm 16mm;
     margin: 24px auto;
     background: var(--areia-light);
     box-shadow: 0 30px 60px -20px rgba(0,0,0,0.6), 0 10px 30px -10px rgba(0,0,0,0.4);
@@ -47,17 +46,8 @@
     flex-direction: column;
   }
 
-  .page-cover {
-    background: var(--terracota);
-    color: var(--areia);
-    padding: 0;
-    justify-content: space-between;
-  }
-
-  .page-back {
-    background: var(--tinta);
-    color: var(--areia);
-  }
+  .page-cover { background: var(--terracota); color: var(--areia); padding: 0; }
+  .page-back { background: var(--tinta); color: var(--areia); }
 
   /* COVER */
   .cover-wrap {
@@ -88,24 +78,24 @@
   }
 
   .cover-top {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-family: 'Inter', sans-serif;
-    font-size: 9pt;
-    letter-spacing: 0.2em;
-    text-transform: uppercase;
-    opacity: 0.85;
     z-index: 2;
     position: relative;
   }
-
-  .cover-badge {
-    display: inline-block;
-    border: 1px solid var(--areia);
-    padding: 4px 10px;
-    border-radius: 99px;
+  .cover-brand {
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+    font-size: 20pt;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--areia);
+    margin-bottom: 2mm;
+  }
+  .cover-brand-sub {
+    font-family: 'Inter', sans-serif;
     font-size: 8pt;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    opacity: 0.7;
   }
 
   .cover-mid { z-index: 2; position: relative; }
@@ -113,23 +103,22 @@
   .cover-eyebrow {
     font-family: 'Inter', sans-serif;
     font-weight: 500;
-    font-size: 10pt;
+    font-size: 9pt;
     letter-spacing: 0.25em;
     text-transform: uppercase;
-    margin-bottom: 14mm;
-    opacity: 0.9;
+    margin-bottom: 8mm;
+    opacity: 0.85;
   }
 
   .cover-title {
     font-family: 'Fraunces', serif;
     font-weight: 700;
-    font-size: 42pt;
-    line-height: 1.0;
+    font-size: 36pt;
+    line-height: 1.05;
     letter-spacing: -0.02em;
-    margin-bottom: 10mm;
+    margin-bottom: 8mm;
     font-variation-settings: "opsz" 144;
   }
-
   .cover-title em {
     font-style: italic;
     color: var(--destaque);
@@ -138,6 +127,7 @@
 
   .cover-sub {
     font-family: 'Fraunces', serif;
+    font-style: italic;
     font-weight: 400;
     font-size: 14pt;
     line-height: 1.35;
@@ -152,14 +142,22 @@
     z-index: 2;
     position: relative;
   }
-
   .cover-author {
     font-family: 'Inter', sans-serif;
     font-size: 11pt;
-    line-height: 1.4;
+    line-height: 1.5;
   }
-  .cover-author strong { font-weight: 600; display: block; font-size: 13pt; }
+  .cover-author strong { font-weight: 600; display: block; font-size: 12pt; }
   .cover-author span { opacity: 0.75; font-size: 9pt; }
+  .cover-author .ig {
+    display: inline-block;
+    margin-top: 2mm;
+    padding: 2px 8px;
+    background: rgba(245, 237, 224, 0.15);
+    border-radius: 99px;
+    font-size: 8.5pt;
+    letter-spacing: 0.05em;
+  }
 
   .cover-version {
     font-family: 'Inter', sans-serif;
@@ -199,6 +197,10 @@
     justify-content: space-between;
     align-items: center;
   }
+  .page-footer .ig {
+    color: var(--terracota);
+    font-weight: 600;
+  }
 
   /* TYPOGRAPHY */
   h1.chapter-num {
@@ -208,16 +210,16 @@
     letter-spacing: 0.3em;
     text-transform: uppercase;
     color: var(--terracota);
-    margin-bottom: 6mm;
+    margin-bottom: 5mm;
   }
 
   h1.chapter-title {
     font-family: 'Fraunces', serif;
     font-weight: 600;
-    font-size: 28pt;
+    font-size: 26pt;
     line-height: 1.1;
     letter-spacing: -0.015em;
-    margin-bottom: 10mm;
+    margin-bottom: 8mm;
     color: var(--tinta);
     font-variation-settings: "opsz" 144;
   }
@@ -225,69 +227,127 @@
   h2 {
     font-family: 'Fraunces', serif;
     font-weight: 600;
-    font-size: 18pt;
+    font-size: 16pt;
     line-height: 1.2;
-    letter-spacing: -0.01em;
-    margin-top: 8mm;
-    margin-bottom: 4mm;
+    margin-top: 7mm;
+    margin-bottom: 3mm;
     color: var(--tinta);
   }
 
   h3 {
     font-family: 'Inter', sans-serif;
     font-weight: 600;
-    font-size: 11pt;
+    font-size: 10pt;
     text-transform: uppercase;
     letter-spacing: 0.1em;
-    margin-top: 6mm;
-    margin-bottom: 3mm;
+    margin-top: 5mm;
+    margin-bottom: 2mm;
     color: var(--terracota-dark);
   }
 
   p {
-    margin-bottom: 4mm;
-    text-align: justify;
-    hyphens: auto;
+    margin-bottom: 3.5mm;
+    text-align: left;
   }
 
   p.lead {
     font-size: 13pt;
-    line-height: 1.5;
-    color: var(--tinta-soft);
+    line-height: 1.45;
+    color: var(--tinta);
+    font-family: 'Fraunces', serif;
     font-style: italic;
-    margin-bottom: 8mm;
-    text-align: left;
+    margin-bottom: 7mm;
   }
 
+  /* RESUMO BOX (no topo de cada cap pra TDAH não desistir) */
+  .resumo {
+    background: linear-gradient(180deg, var(--rosa-suave) 0%, #F0DAC9 100%);
+    border-radius: 8px;
+    padding: 5mm 6mm;
+    margin-bottom: 7mm;
+    border-left: 4px solid var(--terracota);
+  }
+  .resumo-label {
+    font-family: 'Inter', sans-serif;
+    font-size: 7.5pt;
+    font-weight: 700;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: var(--terracota-dark);
+    margin-bottom: 2mm;
+  }
+  .resumo-text {
+    font-family: 'Fraunces', serif;
+    font-size: 11pt;
+    line-height: 1.45;
+    color: var(--tinta);
+    margin: 0;
+  }
+
+  /* CASO BOX (caso composto) */
+  .caso {
+    background: var(--areia);
+    border-radius: 8px;
+    padding: 6mm 7mm;
+    margin: 6mm 0;
+    border-top: 3px solid var(--verde-musgo);
+  }
+  .caso-label {
+    font-family: 'Inter', sans-serif;
+    font-size: 7.5pt;
+    font-weight: 700;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: var(--verde-musgo);
+    margin-bottom: 3mm;
+  }
+  .caso-text {
+    font-family: 'Fraunces', serif;
+    font-style: italic;
+    font-size: 11pt;
+    line-height: 1.5;
+    color: var(--tinta-soft);
+    margin: 0;
+  }
+  .caso-disclaimer {
+    font-family: 'Inter', sans-serif;
+    font-size: 7pt;
+    color: var(--tinta-soft);
+    opacity: 0.7;
+    margin-top: 3mm;
+    font-style: italic;
+  }
+
+  /* DROPCAP */
   .dropcap::first-letter {
     float: left;
     font-family: 'Fraunces', serif;
     font-weight: 700;
-    font-size: 52pt;
+    font-size: 48pt;
     line-height: 0.85;
     padding: 4px 6px 0 0;
     color: var(--terracota);
   }
 
+  /* QUOTE */
   blockquote {
     border-left: 3px solid var(--terracota);
-    padding: 4mm 0 4mm 6mm;
-    margin: 6mm 0;
+    padding: 3mm 0 3mm 6mm;
+    margin: 5mm 0;
     font-family: 'Fraunces', serif;
     font-style: italic;
     font-size: 13pt;
     line-height: 1.4;
-    color: var(--tinta);
   }
   blockquote cite {
     display: block;
     font-style: normal;
     font-family: 'Inter', sans-serif;
-    font-size: 9pt;
+    font-size: 8.5pt;
     letter-spacing: 0.1em;
     text-transform: uppercase;
     color: var(--tinta-soft);
-    margin-top: 3mm;
+    margin-top: 2mm;
   }
 
   /* BOXES */
@@ -295,10 +355,9 @@
     background: var(--areia);
     border: 1px solid var(--linha);
     border-radius: 6px;
-    padding: 6mm 7mm;
-    margin: 6mm 0;
+    padding: 5mm 6mm;
+    margin: 5mm 0;
   }
-
   .box-eyebrow {
     font-family: 'Inter', sans-serif;
     font-size: 8pt;
@@ -306,76 +365,44 @@
     letter-spacing: 0.2em;
     text-transform: uppercase;
     color: var(--terracota);
-    margin-bottom: 3mm;
+    margin-bottom: 2mm;
   }
-
   .box-title {
     font-family: 'Fraunces', serif;
     font-weight: 600;
-    font-size: 14pt;
-    margin-bottom: 3mm;
+    font-size: 13pt;
+    margin-bottom: 2mm;
     line-height: 1.2;
   }
-
-  .box-exercise {
+  .box-action {
     background: linear-gradient(180deg, #FAEEDF 0%, var(--areia) 100%);
     border-left: 4px solid var(--destaque);
   }
 
-  .box-warning {
-    background: #F0EBE0;
-    border-left: 4px solid var(--verde-musgo);
-  }
-
   /* LISTS */
-  ul.checklist {
-    list-style: none;
-    padding: 0;
-    margin: 4mm 0;
-  }
-  ul.checklist li {
-    padding: 3mm 0 3mm 9mm;
-    position: relative;
-    border-bottom: 1px dashed var(--linha);
-    font-family: 'Inter', sans-serif;
-    font-size: 10pt;
-    line-height: 1.5;
-  }
-  ul.checklist li::before {
-    content: '';
-    position: absolute;
-    left: 0; top: 4mm;
-    width: 5mm; height: 5mm;
-    border: 1.5px solid var(--terracota);
-    border-radius: 3px;
-    background: white;
-  }
-
   ul.bullet {
-    padding-left: 5mm;
+    padding-left: 0;
     margin: 3mm 0;
   }
   ul.bullet li {
     margin-bottom: 2mm;
     list-style: none;
     position: relative;
-    padding-left: 5mm;
+    padding-left: 7mm;
+    line-height: 1.5;
   }
   ul.bullet li::before {
-    content: '◆';
+    content: '';
     position: absolute;
     left: 0;
-    color: var(--terracota);
-    font-size: 8pt;
-    top: 2px;
+    top: 6px;
+    width: 4mm;
+    height: 1px;
+    background: var(--terracota);
   }
 
-  /* SUMARIO */
-  .toc-list {
-    margin-top: 6mm;
-    list-style: none;
-    padding: 0;
-  }
+  /* TOC */
+  .toc-list { margin-top: 5mm; list-style: none; padding: 0; }
   .toc-section {
     font-family: 'Inter', sans-serif;
     font-size: 9pt;
@@ -396,167 +423,130 @@
     font-family: 'Fraunces', serif;
     font-size: 11pt;
   }
-  .toc-item .dots {
-    flex: 1;
-    border-bottom: 1px dotted var(--linha);
-    margin: 0 4mm;
-    transform: translateY(-3px);
+  .toc-item .num {
+    color: var(--terracota);
+    font-weight: 600;
+    margin-right: 4mm;
   }
+  .toc-item .title { flex: 1; }
   .toc-item .pg {
     font-family: 'Inter', sans-serif;
     font-size: 9pt;
     color: var(--tinta-soft);
+    margin-left: 4mm;
   }
 
-  /* QUIZ */
-  .quiz-q {
-    border-bottom: 1px solid var(--linha);
-    padding: 4mm 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap: 8mm;
-  }
-  .quiz-q:last-child { border-bottom: none; }
-  .quiz-q .q-text {
+  /* QUIZ - GRID FIX */
+  .quiz-table {
+    width: 100%;
+    margin-top: 5mm;
     font-family: 'Fraunces', serif;
-    font-size: 10.5pt;
-    line-height: 1.4;
-    flex: 1;
   }
-  .quiz-q .q-num {
+  .quiz-row {
+    display: grid;
+    grid-template-columns: 8mm 1fr repeat(5, 11mm);
+    align-items: center;
+    gap: 2mm;
+    padding: 3mm 0;
+    border-bottom: 1px solid var(--linha);
+  }
+  .quiz-row:last-child { border-bottom: none; }
+  .quiz-row.header {
+    border-bottom: 2px solid var(--terracota);
+    padding: 2mm 0;
+  }
+  .quiz-row.header .header-label {
+    font-family: 'Inter', sans-serif;
+    font-size: 7pt;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--tinta-soft);
+    text-align: center;
+    line-height: 1.15;
+  }
+  .quiz-num {
     font-family: 'Inter', sans-serif;
     font-weight: 600;
     color: var(--terracota);
     font-size: 9pt;
-    width: 8mm;
-    flex-shrink: 0;
   }
-  .quiz-q .q-options {
-    display: flex;
-    gap: 4mm;
-    flex-shrink: 0;
+  .quiz-text {
+    font-size: 10pt;
+    line-height: 1.4;
+    padding-right: 3mm;
   }
-  .quiz-q .q-options span {
-    width: 7mm; height: 7mm;
+  .quiz-box {
+    width: 7mm;
+    height: 7mm;
     border: 1.2px solid var(--linha);
     border-radius: 3px;
-    display: inline-block;
+    background: white;
+    margin: 0 auto;
   }
 
-  .quiz-scale {
-    display: flex;
-    justify-content: space-between;
-    font-family: 'Inter', sans-serif;
-    font-size: 7pt;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    color: var(--tinta-soft);
-    margin-bottom: 3mm;
-    padding-left: 12mm;
-  }
-  .quiz-scale span { width: 7mm; text-align: center; }
-
-  /* DAY CARD */
-  .day-header {
+  /* TOOL CARD (each of the 7 tools) */
+  .tool-header {
     background: var(--terracota);
     color: var(--areia);
-    padding: 6mm 8mm;
-    border-radius: 6px;
+    padding: 5mm 7mm;
+    border-radius: 8px;
     margin-bottom: 6mm;
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
-  .day-header .day-num {
+  .tool-num {
     font-family: 'Fraunces', serif;
     font-weight: 700;
-    font-size: 38pt;
+    font-size: 36pt;
     line-height: 1;
   }
-  .day-header .day-info {
-    text-align: right;
-  }
-  .day-header .day-week {
+  .tool-info { text-align: right; flex: 1; padding-left: 8mm; }
+  .tool-eyebrow {
     font-family: 'Inter', sans-serif;
     font-size: 8pt;
     letter-spacing: 0.25em;
     text-transform: uppercase;
     opacity: 0.85;
-    margin-bottom: 2mm;
+    margin-bottom: 1mm;
   }
-  .day-header .day-title {
+  .tool-title {
     font-family: 'Fraunces', serif;
     font-weight: 600;
-    font-size: 18pt;
+    font-size: 17pt;
     line-height: 1.1;
   }
 
-  .day-meta {
-    display: flex;
-    gap: 6mm;
+  .tool-meta {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 4mm;
     margin-bottom: 6mm;
-    padding: 4mm 0;
+    padding: 3mm 0;
     border-top: 1px solid var(--linha);
     border-bottom: 1px solid var(--linha);
     font-family: 'Inter', sans-serif;
     font-size: 9pt;
   }
-  .day-meta strong {
+  .tool-meta strong {
     display: block;
     font-size: 7pt;
     letter-spacing: 0.2em;
     text-transform: uppercase;
     color: var(--terracota);
     margin-bottom: 1mm;
-  }
-
-  /* TEMPLATE / WORKSHEET */
-  .worksheet {
-    background: white;
-    border: 1px solid var(--tinta);
-    padding: 8mm;
-    margin: 6mm 0;
-  }
-  .worksheet-title {
-    font-family: 'Fraunces', serif;
-    font-weight: 700;
-    font-size: 16pt;
-    margin-bottom: 1mm;
-    color: var(--tinta);
-  }
-  .worksheet-sub {
-    font-family: 'Inter', sans-serif;
-    font-size: 8pt;
-    letter-spacing: 0.15em;
-    text-transform: uppercase;
-    color: var(--tinta-soft);
-    margin-bottom: 6mm;
-  }
-  .worksheet-row {
-    display: grid;
-    grid-template-columns: 38mm 1fr;
-    gap: 4mm;
-    padding: 3mm 0;
-    border-bottom: 1px solid var(--linha);
-    align-items: start;
-  }
-  .worksheet-row:last-child { border-bottom: none; }
-  .worksheet-label {
-    font-family: 'Inter', sans-serif;
-    font-size: 9pt;
-    font-weight: 500;
-    color: var(--tinta-soft);
-  }
-  .worksheet-line {
-    border-bottom: 1px solid var(--linha);
-    height: 7mm;
+    font-weight: 600;
   }
 
   /* CTA PAGE */
-  .cta-section {
-    text-align: center;
-    padding: 8mm 0;
+  .cta-wrap {
+    text-align: left;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
   .cta-eyebrow {
     font-family: 'Inter', sans-serif;
@@ -564,13 +554,13 @@
     letter-spacing: 0.3em;
     text-transform: uppercase;
     color: var(--destaque);
-    margin-bottom: 6mm;
+    margin-bottom: 5mm;
   }
   .cta-title {
     font-family: 'Fraunces', serif;
     font-weight: 600;
     font-size: 26pt;
-    line-height: 1.15;
+    line-height: 1.1;
     margin-bottom: 6mm;
     color: var(--areia);
   }
@@ -580,8 +570,7 @@
     line-height: 1.55;
     color: var(--areia);
     opacity: 0.92;
-    max-width: 95%;
-    margin: 0 auto 8mm;
+    margin-bottom: 5mm;
   }
   .cta-button {
     display: inline-block;
@@ -591,7 +580,7 @@
     font-weight: 600;
     font-size: 11pt;
     letter-spacing: 0.05em;
-    padding: 5mm 12mm;
+    padding: 5mm 10mm;
     border-radius: 99px;
     text-decoration: none;
     margin: 4mm 0;
@@ -601,16 +590,17 @@
     font-size: 9pt;
     color: var(--areia);
     opacity: 0.7;
-    margin-top: 6mm;
+    margin-top: 4mm;
+    line-height: 1.5;
   }
 
-  /* AUTHOR PAGE */
+  /* AUTHOR */
   .author-card {
     display: grid;
     grid-template-columns: 38mm 1fr;
     gap: 8mm;
     align-items: start;
-    margin-top: 8mm;
+    margin-top: 6mm;
   }
   .author-photo {
     width: 38mm; height: 48mm;
@@ -627,9 +617,9 @@
   .author-info h3 {
     font-family: 'Fraunces', serif;
     font-weight: 600;
-    font-size: 18pt;
+    font-size: 17pt;
     color: var(--tinta);
-    margin: 0 0 2mm;
+    margin: 0 0 1mm;
     text-transform: none;
     letter-spacing: 0;
   }
@@ -638,14 +628,13 @@
     font-size: 9pt;
     color: var(--terracota);
     margin-bottom: 4mm;
-    letter-spacing: 0.05em;
   }
   .author-bio {
     font-size: 10.5pt;
-    line-height: 1.55;
+    line-height: 1.5;
   }
 
-  /* PAGE FRAME for screen */
+  /* PREVIEW TOOLBAR */
   .preview-toolbar {
     position: fixed;
     bottom: 16px; left: 50%;
@@ -658,7 +647,6 @@
     font-size: 12px;
     box-shadow: 0 10px 30px rgba(0,0,0,0.3);
     z-index: 999;
-    backdrop-filter: blur(8px);
   }
   .preview-toolbar a {
     color: var(--destaque);
@@ -688,23 +676,24 @@
 <div class="page page-cover">
   <div class="cover-wrap">
     <div class="cover-top">
-      <span>Clínica Souto Maior</span>
-      <span class="cover-badge">Guia Prático</span>
+      <div class="cover-brand">Raiz Psi</div>
+      <div class="cover-brand-sub">Saúde mental para mulheres</div>
     </div>
 
     <div class="cover-mid">
-      <div class="cover-eyebrow">Saúde Mental para Mulheres Adultas</div>
-      <h1 class="cover-title">TDAH<br>na Vida<br><em>Real.</em></h1>
-      <p class="cover-sub">O plano de 21 dias para parar de procrastinar, organizar a rotina e parar de se sentir incapaz.</p>
+      <div class="cover-eyebrow">Guia prático · TDAH adulto</div>
+      <h1 class="cover-title">7 sistemas que funcionam pra cérebro com <em>TDAH.</em></h1>
+      <p class="cover-sub">E por que tudo que você já tentou antes falhou (não foi culpa sua).</p>
     </div>
 
     <div class="cover-bottom">
       <div class="cover-author">
         <strong>Jéssica Souto Maior</strong>
         <span>Psicóloga · CRP XX/XXXXX</span>
+        <span class="ig">@jessicasoutomaior</span>
       </div>
       <div class="cover-version">
-        Edição 2026<br>v1.0
+        Edição<br>2026
       </div>
     </div>
   </div>
@@ -713,637 +702,652 @@
 <!-- ============== CRÉDITOS ============== -->
 <div class="page">
   <div class="page-header">
-    <span class="brand">TDAH na Vida Real</span>
+    <span class="brand">Raiz Psi</span>
     <span>Créditos</span>
   </div>
   <div class="page-content" style="padding-top: 30mm;">
     <p style="font-family: 'Inter', sans-serif; font-size: 9pt; color: var(--tinta-soft); line-height: 1.7;">
-      <strong>TDAH na Vida Real:</strong><br>
-      O plano de 21 dias para parar de procrastinar, organizar a rotina e parar de se sentir incapaz.<br><br>
+      <strong>7 sistemas que funcionam pra cérebro com TDAH.</strong><br>
+      E por que tudo que você já tentou antes falhou.<br><br>
 
-      © 2026 Jéssica Souto Maior. Todos os direitos reservados.<br><br>
+      © 2026 Raiz Psi · Todos os direitos reservados.<br><br>
 
-      Autora: Jéssica Souto Maior — Psicóloga, CRP XX/XXXXX<br>
-      Clínica Souto Maior — jessicasoutomaior.com<br><br>
+      Autora: Jéssica Souto Maior, psicóloga, CRP XX/XXXXX.<br>
+      Diretora clínica da Raiz Psi.<br>
+      Instagram: <strong>@jessicasoutomaior</strong><br>
+      Site: jessicasoutomaior.com/raizpsi<br><br>
 
-      <strong>Aviso importante.</strong> Este material é educativo e não substitui acompanhamento clínico individualizado, diagnóstico médico ou prescrição medicamentosa. Caso você reconheça em si os sinais aqui descritos, procure um profissional habilitado para uma avaliação adequada — psicólogo, psiquiatra ou neurologista. Em situações de crise grave, ideação suicida ou autolesão, entre em contato com o CVV (188), CAPS de sua região ou serviço de emergência (192).<br><br>
+      <strong style="color: var(--terracota);">Aviso importante.</strong> Este material é educativo e não substitui acompanhamento clínico individualizado, diagnóstico médico ou prescrição medicamentosa. Se você se reconhecer aqui, procure profissional habilitado para avaliação adequada (psicólogo, psiquiatra ou neurologista). Em situação de crise grave, ideação suicida ou autolesão, entre em contato com o CVV (188), CAPS de sua região ou serviço de emergência (192).<br><br>
 
-      É proibida a reprodução, distribuição ou comercialização não autorizada deste conteúdo.<br><br>
+      É proibida a reprodução, distribuição ou comercialização não autorizada.<br><br>
 
-      Diagramação e identidade: Estúdio próprio.<br>
-      1ª edição digital — Brasil, 2026.
+      1ª edição digital, Brasil, 2026.
     </p>
   </div>
   <div class="page-footer">
-    <span>jessicasoutomaior.com</span>
+    <span>raizpsi.com.br</span>
+    <span class="ig">@jessicasoutomaior</span>
     <span>2</span>
-  </div>
-</div>
-
-<!-- ============== SUMÁRIO ============== -->
-<div class="page">
-  <div class="page-header">
-    <span class="brand">TDAH na Vida Real</span>
-    <span>Sumário</span>
-  </div>
-  <div class="page-content">
-    <h1 class="chapter-num">Índice</h1>
-    <h1 class="chapter-title" style="font-size: 32pt;">O que você vai encontrar aqui.</h1>
-
-    <div class="toc-list">
-      <div class="toc-section">Parte I · Você não é preguiçosa</div>
-      <div class="toc-item"><span>1. A história que você conta sobre si mesma está errada</span><span class="dots"></span><span class="pg">9</span></div>
-      <div class="toc-item"><span>2. O que é TDAH de verdade (sem jargão)</span><span class="dots"></span><span class="pg">17</span></div>
-      <div class="toc-item"><span>3. Por que TDAH em mulher adulta foi ignorado por décadas</span><span class="dots"></span><span class="pg">23</span></div>
-      <div class="toc-item"><span>4. Os 7 sinais que ninguém te falou + Quiz ASRS-18</span><span class="dots"></span><span class="pg">29</span></div>
-      <div class="toc-item"><span>5. TDAH, ansiedade ou só estresse? Como diferenciar</span><span class="dots"></span><span class="pg">37</span></div>
-
-      <div class="toc-section">Parte II · Por que nada funcionou até agora</div>
-      <div class="toc-item"><span>6. O ciclo da procrastinação no cérebro com TDAH</span><span class="dots"></span><span class="pg">43</span></div>
-      <div class="toc-item"><span>7. A armadilha da "força de vontade"</span><span class="dots"></span><span class="pg">49</span></div>
-      <div class="toc-item"><span>8. O custo invisível: relacionamentos, carreira, autoestima</span><span class="dots"></span><span class="pg">55</span></div>
-
-      <div class="toc-section">Parte III · O Plano de 21 Dias</div>
-      <div class="toc-item"><span>Semana 1 · Reorganizar o ambiente externo</span><span class="dots"></span><span class="pg">63</span></div>
-      <div class="toc-item"><span>Semana 2 · Reorganizar o cérebro</span><span class="dots"></span><span class="pg">79</span></div>
-      <div class="toc-item"><span>Semana 3 · Sustentabilidade e construção de longo prazo</span><span class="dots"></span><span class="pg">95</span></div>
-
-      <div class="toc-section">Parte IV · Depois dos 21 dias</div>
-      <div class="toc-item"><span>9. Como funciona uma avaliação neuropsicológica</span><span class="dots"></span><span class="pg">113</span></div>
-      <div class="toc-item"><span>10. Psicoterapia, medicação ou ambos? Um mapa honesto</span><span class="dots"></span><span class="pg">119</span></div>
-      <div class="toc-item"><span>11. Convite: o próximo passo</span><span class="dots"></span><span class="pg">125</span></div>
-    </div>
-  </div>
-  <div class="page-footer">
-    <span>jessicasoutomaior.com</span>
-    <span>3</span>
   </div>
 </div>
 
 <!-- ============== CARTA DA AUTORA ============== -->
 <div class="page">
   <div class="page-header">
-    <span class="brand">TDAH na Vida Real</span>
+    <span class="brand">Raiz Psi</span>
     <span>Carta da autora</span>
   </div>
   <div class="page-content">
-    <h1 class="chapter-num">Antes de começar</h1>
-    <h1 class="chapter-title">Uma carta para você.</h1>
+    <h1 class="chapter-num">Antes da gente começar</h1>
+    <h1 class="chapter-title">Oi. Sou a Jéssica.</h1>
 
-    <p class="lead">Se você abriu este ebook, é provável que esteja exausta. Não fisicamente — exausta de tentar.</p>
+    <p class="lead">Sei que você baixou esse ebook às 23h47 prometendo que amanhã ia ser diferente. Tudo bem. Só lê a próxima página antes de fechar.</p>
 
-    <p class="dropcap">Cansada de baixar mais um aplicativo de produtividade que dura três dias. De começar uma agenda nova em janeiro e abandonar em fevereiro. De prometer pra você mesma que dessa vez vai ser diferente, e descobrir, três semanas depois, que não foi.</p>
+    <p>Eu atendo mulheres com TDAH adulto há anos no consultório. Quase todas chegam dizendo a mesma coisa.</p>
 
-    <p>Talvez você tenha lido em algum lugar sobre TDAH e algo dentro fez "clique". Talvez uma amiga tenha sido diagnosticada e você se reconheceu na descrição dela. Talvez você ainda esteja em dúvida — não tem certeza se é TDAH, se é ansiedade, se é só a vida moderna sendo demais.</p>
+    <p>"Eu sei que sou capaz, mas não consigo."</p>
 
-    <p>Eu escrevi esse material para um momento específico: o momento em que você desconfia que existe uma explicação melhor pra tudo isso, mas ainda não tem ferramentas práticas pra fazer alguma coisa diferente <em>hoje</em>.</p>
+    <p>"Comecei mil vezes e nunca termino."</p>
 
-    <h2>O que esse ebook é (e o que não é)</h2>
+    <p>"Eu queria entender o que tá errado comigo."</p>
 
-    <p>Esse não é um manual de produtividade. Já existem milhares deles e provavelmente nenhum funcionou pra você de forma sustentável — não porque você falhou, mas porque foram desenhados para um cérebro neurotípico que o seu não tem.</p>
+    <div class="caso">
+      <div class="caso-label">Identificação</div>
+      <p class="caso-text">A Marina, 34 anos, advogada, chegou aqui depois de baixar 7 aplicativos de produtividade em 6 meses. Cada um durou em média 11 dias. No último, ela me disse: "Eu acho que o problema sou eu mesmo, né? Tudo que eu tento dura uma semana e meia."</p>
+      <p class="caso-disclaimer">Caso composto, baseado em padrões clínicos reais. Identidades preservadas.</p>
+    </div>
 
-    <p>Também não é um livro de autoajuda que vai te dizer que "você consegue se quiser". Esse tipo de discurso é justamente parte do problema.</p>
+    <p>Quando ela me contou isso, fiz uma pergunta que mudou a conversa: "E quando você desistiu, foi porque o método era ruim, ou porque ele exigia uma forma de funcionar que seu cérebro simplesmente não tem?"</p>
 
-    <p>Esse é um <strong>guia clínico aplicado</strong> — escrito por uma psicóloga, baseado em evidências sobre como o cérebro com TDAH efetivamente funciona, com 21 dias de exercícios práticos que respeitam essa diferença em vez de tentar lutar contra ela.</p>
+    <p>Ela ficou em silêncio por uns segundos. Depois disse: "Ninguém nunca me perguntou isso."</p>
 
-    <h2>O que pode mudar em 21 dias</h2>
-
-    <p>Sejamos honestas: TDAH não tem cura, e qualquer pessoa que prometer isso está mentindo. Mas em 21 dias, com o método certo, é possível:</p>
-
-    <ul class="bullet">
-      <li>Reduzir significativamente o caos visual e mental do dia a dia</li>
-      <li>Construir 2 ou 3 sistemas externos que substituem a memória que falha</li>
-      <li>Diminuir a procrastinação para tarefas simples</li>
-      <li>Reconhecer com clareza seus padrões de gatilho</li>
-      <li>Ter conversas mais honestas com família e parceiro sobre o que você precisa</li>
-    </ul>
-
-    <p>O que não vai acontecer em 21 dias: virar outra pessoa. E a boa notícia é que esse nunca foi o objetivo.</p>
+    <p>Esse ebook é exatamente isso. Não vai te ensinar a ser uma pessoa "produtiva". Vai te dar 7 sistemas que respeitam como seu cérebro realmente funciona, em vez de tentar consertar o que não está quebrado.</p>
   </div>
   <div class="page-footer">
-    <span>jessicasoutomaior.com</span>
-    <span>5</span>
+    <span>raizpsi.com.br</span>
+    <span class="ig">@jessicasoutomaior</span>
+    <span>3</span>
   </div>
 </div>
 
 <!-- ============== CARTA - PG 2 ============== -->
 <div class="page">
   <div class="page-header">
-    <span class="brand">TDAH na Vida Real</span>
+    <span class="brand">Raiz Psi</span>
     <span>Carta da autora</span>
   </div>
   <div class="page-content">
-    <h2 style="margin-top: 0;">Como usar este material</h2>
+    <h2 style="margin-top: 0;">O que esse ebook é</h2>
 
-    <p>Cada dia do plano leva entre 10 e 20 minutos. Foi desenhado assim de propósito — porque sei que pedir 1h por dia de uma pessoa com TDAH é a receita perfeita para o abandono na terça-feira.</p>
+    <ul class="bullet">
+      <li>7 ferramentas práticas, cada uma com aplicação imediata</li>
+      <li>Tempo médio por ferramenta: 10 a 15 minutos</li>
+      <li>Você escolhe a ordem (não tem "dia 1, dia 2, dia 3")</li>
+      <li>Pode usar uma só, se já fizer diferença</li>
+      <li>Conteúdo baseado em evidência clínica e adaptado pro contexto brasileiro</li>
+    </ul>
 
-    <p>Você tem três modos possíveis de leitura:</p>
+    <h2>O que esse ebook NÃO é</h2>
+
+    <ul class="bullet">
+      <li>Não é manual de produtividade</li>
+      <li>Não é autoajuda dizendo que "você consegue se quiser"</li>
+      <li>Não substitui psicoterapia, avaliação ou medicação</li>
+      <li>Não promete cura (TDAH não tem cura, e quem promete tá mentindo)</li>
+    </ul>
+
+    <h2>Como ler isso aqui</h2>
+
+    <p>Você pode fazer de 3 formas. Escolhe a que funciona pra você hoje.</p>
 
     <div class="box">
-      <div class="box-eyebrow">Modo 1 · Imersão</div>
-      <p style="margin: 0;">Ler todo o ebook primeiro (Partes I e II), entender o porquê, e só depois iniciar os 21 dias. Recomendado se você gosta de saber a fundamentação antes de agir.</p>
+      <div class="box-eyebrow">Modo 1 · A pressa</div>
+      <p style="margin: 0; font-size: 10pt;">Pula direto pro Sistema 1 e começa a aplicar. Lê o resto quando der vontade.</p>
     </div>
 
     <div class="box">
-      <div class="box-eyebrow">Modo 2 · Ação imediata</div>
-      <p style="margin: 0;">Pular direto para o Dia 1 e começar a praticar. Ler as Partes I e II em paralelo, nos intervalos. Recomendado se você está num momento de "preciso fazer algo agora".</p>
+      <div class="box-eyebrow">Modo 2 · A entendedora</div>
+      <p style="margin: 0; font-size: 10pt;">Lê a parte "Por que o problema não é você" primeiro. Faz o quiz. Depois vai pros sistemas.</p>
     </div>
 
     <div class="box">
-      <div class="box-eyebrow">Modo 3 · Consulta</div>
-      <p style="margin: 0;">Usar o quiz do capítulo 4 primeiro para mapear seus pontos mais críticos, e depois ir direto para os capítulos e dias relacionados. Recomendado se você já leu bastante sobre TDAH.</p>
+      <div class="box-eyebrow">Modo 3 · A escolhedora</div>
+      <p style="margin: 0; font-size: 10pt;">Vê o índice dos 7 sistemas. Escolhe o que mais te chama. Aplica esse. Volta depois.</p>
     </div>
-
-    <p style="margin-top: 8mm;">Não existe modo certo. Existe o modo que faz você efetivamente abrir o material amanhã, depois de amanhã, e na semana que vem.</p>
 
     <blockquote>
-      Você não está quebrada. Você tem um cérebro que funciona de outro jeito, num mundo desenhado para outro tipo de cérebro. A diferença entre sofrer e prosperar não está em consertar você — está em construir o ambiente certo para quem você já é.
-      <cite>— Jéssica Souto Maior</cite>
+      Você não está quebrada. Você só estava tentando consertar a coisa errada.
+      <cite>Jéssica</cite>
     </blockquote>
 
-    <p style="text-align: right; font-family: 'Fraunces', serif; font-style: italic; font-size: 12pt; margin-top: 10mm;">Boa leitura.<br>E coragem.</p>
+    <p style="text-align: right; font-style: italic; font-size: 12pt; margin-top: 6mm;">Boa leitura.</p>
   </div>
   <div class="page-footer">
-    <span>jessicasoutomaior.com</span>
-    <span>6</span>
+    <span>raizpsi.com.br</span>
+    <span class="ig">@jessicasoutomaior</span>
+    <span>4</span>
+  </div>
+</div>
+
+<!-- ============== ÍNDICE ============== -->
+<div class="page">
+  <div class="page-header">
+    <span class="brand">Raiz Psi</span>
+    <span>Índice</span>
+  </div>
+  <div class="page-content">
+    <h1 class="chapter-num">O que tem aqui dentro</h1>
+    <h1 class="chapter-title">Índice.</h1>
+
+    <div class="toc-list">
+      <div class="toc-section">Parte I · Por que não é culpa sua</div>
+      <div class="toc-item"><span class="title">Capítulo 1. A história errada que te contaram</span><span class="pg">7</span></div>
+      <div class="toc-item"><span class="title">Capítulo 2. Quiz ASRS-18 (a escala oficial da OMS)</span><span class="pg">11</span></div>
+
+      <div class="toc-section">Parte II · Os 7 sistemas</div>
+      <div class="toc-item"><span class="num">1.</span><span class="title">A Auditoria do Caos</span><span class="pg">15</span></div>
+      <div class="toc-item"><span class="num">2.</span><span class="title">A Regra do Ponto de Pouso</span><span class="pg">19</span></div>
+      <div class="toc-item"><span class="num">3.</span><span class="title">O Cronômetro de 7 Minutos</span><span class="pg">23</span></div>
+      <div class="toc-item"><span class="num">4.</span><span class="title">A Externalização da Memória</span><span class="pg">27</span></div>
+      <div class="toc-item"><span class="num">5.</span><span class="title">O Ritual de Início</span><span class="pg">31</span></div>
+      <div class="toc-item"><span class="num">6.</span><span class="title">O Mapa da Sua Energia</span><span class="pg">35</span></div>
+      <div class="toc-item"><span class="num">7.</span><span class="title">A Conversa Honesta (família e trabalho)</span><span class="pg">39</span></div>
+
+      <div class="toc-section">Parte III · O que vem depois</div>
+      <div class="toc-item"><span class="title">A história da Carolina (caso completo)</span><span class="pg">43</span></div>
+      <div class="toc-item"><span class="title">Quando o ebook não basta</span><span class="pg">47</span></div>
+      <div class="toc-item"><span class="title">Como funciona uma avaliação neuropsicológica</span><span class="pg">49</span></div>
+      <div class="toc-item"><span class="title">Próximo passo</span><span class="pg">51</span></div>
+    </div>
+  </div>
+  <div class="page-footer">
+    <span>raizpsi.com.br</span>
+    <span class="ig">@jessicasoutomaior</span>
+    <span>5</span>
   </div>
 </div>
 
 <!-- ============== CAPÍTULO 1 - PG 1 ============== -->
 <div class="page">
   <div class="page-header">
-    <span class="brand">Parte I · Você não é preguiçosa</span>
+    <span class="brand">Parte I · Não é culpa sua</span>
     <span>Capítulo 1</span>
   </div>
   <div class="page-content">
     <h1 class="chapter-num">Capítulo Um</h1>
-    <h1 class="chapter-title">A história que você conta sobre si mesma está errada.</h1>
+    <h1 class="chapter-title">A história errada que te contaram sobre você.</h1>
 
-    <p class="lead">Antes de qualquer técnica, ferramenta ou plano, precisamos desmontar a narrativa errada que você carrega há décadas.</p>
+    <div class="resumo">
+      <div class="resumo-label">Resumo em 30 segundos</div>
+      <p class="resumo-text">Você não é preguiçosa, desorganizada nem irresponsável. Você tem (ou pode ter) um cérebro que funciona diferente, e esse cérebro foi descrito de forma errada por décadas. O capítulo de hoje é sobre trocar essa narrativa antes de qualquer técnica.</p>
+    </div>
 
-    <p class="dropcap">Você provavelmente já se descreveu, em algum momento dos últimos cinco anos, com pelo menos uma destas palavras: preguiçosa, desorganizada, distraída, desligada, irresponsável, imatura, "muito intensa", "muito sensível", "esquecida". Talvez todas elas.</p>
+    <p class="dropcap">Você provavelmente já se descreveu, em algum momento dos últimos cinco anos, com pelo menos uma destas palavras: preguiçosa, desorganizada, distraída, esquecida, "muito intensa", "muito sensível", irresponsável, imatura. Talvez todas elas.</p>
 
-    <p>Essas palavras não vieram do nada. Foram colocadas em você — por professores no boletim, por mães cansadas, por chefes em avaliações, por parceiros frustrados. E, em algum momento, você começou a repeti-las pra si mesma, sem nem perceber. Tornaram-se a sua identidade.</p>
+    <p>Essas palavras não vieram do nada. Foram colocadas em você por professores, por mães cansadas, por chefes em avaliação, por parceiros frustrados. Em algum momento, você começou a repetir essas palavras pra você mesma, sem nem perceber. Viraram sua identidade.</p>
 
-    <p>O problema é que essa identidade está descrevendo um sintoma como se fosse um defeito de caráter. É como diagnosticar tosse como "falta de educação por incomodar os outros".</p>
+    <p>O problema é que essa identidade descreve um <em>sintoma</em> como se fosse um <em>defeito de caráter</em>. É como diagnosticar tosse como "falta de educação por incomodar os outros".</p>
 
-    <h2>O viés diagnóstico que custou décadas</h2>
+    <h2>Por que ninguém percebeu antes</h2>
 
-    <p>Por mais de 40 anos, a literatura clínica sobre TDAH foi construída a partir de estudos com meninos brancos hiperativos em idade escolar. O perfil clássico — a criança que não para quieta, atrapalha a aula, sobe na cadeira — virou sinônimo de TDAH no imaginário coletivo.</p>
+    <p>Por mais de 40 anos, a literatura clínica sobre TDAH foi construída a partir de estudos com meninos brancos hiperativos em idade escolar. O perfil clássico, a criança que não para quieta, atrapalha a aula, sobe na cadeira, virou sinônimo de TDAH no imaginário coletivo.</p>
 
-    <p>Meninas, por uma combinação de fatores neurobiológicos, sociais e culturais, raramente apresentam esse perfil. O TDAH em meninas costuma ser predominantemente desatento — não há o componente disruptivo que chama atenção dos pais e professores. Em vez disso, há a menina sonhadora, distraída, que perde os cadernos, esquece a chave, demora a terminar as tarefas. A "lenta", a "avoada", a "preguiçosa".</p>
-
-    <p>Essa menina cresce. E sem diagnóstico, sem qualquer compreensão do que está acontecendo, ela aprende uma coisa: que o problema é ela.</p>
-
-    <blockquote>
-      Quando o diagnóstico vem aos 30, 35 ou 40 anos, raramente a primeira reação é alívio. É luto. Pelos anos perdidos achando que tinha algo de errado com você como pessoa.
-    </blockquote>
+    <p>Meninas raramente apresentam esse perfil. O TDAH em meninas costuma ser predominantemente desatento. Não tem o componente disruptivo que chama atenção dos pais e professores. Em vez disso, tem a menina sonhadora, distraída, que perde os cadernos, esquece a chave, demora a terminar as tarefas. A "lenta", a "avoada", a "preguiçosa".</p>
   </div>
   <div class="page-footer">
-    <span>jessicasoutomaior.com</span>
-    <span>9</span>
+    <span>raizpsi.com.br</span>
+    <span class="ig">@jessicasoutomaior</span>
+    <span>7</span>
   </div>
 </div>
 
 <!-- ============== CAPÍTULO 1 - PG 2 ============== -->
 <div class="page">
   <div class="page-header">
-    <span class="brand">Parte I · Você não é preguiçosa</span>
+    <span class="brand">Parte I · Não é culpa sua</span>
     <span>Capítulo 1</span>
   </div>
   <div class="page-content">
-    <h2 style="margin-top: 0;">A diferença entre não conseguir e não querer</h2>
+    <p>Essa menina cresce. E sem diagnóstico, sem qualquer compreensão do que está acontecendo, ela aprende uma coisa: que o problema é ela.</p>
 
-    <p>Se você sentar com qualquer pessoa que tem TDAH e perguntar "você queria ter terminado aquele projeto a tempo?", a resposta vai ser sim. Sempre sim. Não há, em nenhum lugar dentro dela, vontade de falhar.</p>
+    <blockquote>
+      Quando o diagnóstico vem aos 30, 35 ou 40 anos, raramente a primeira reação é alívio. É luto. Pelos anos perdidos achando que tinha algo de errado com você como pessoa.
+    </blockquote>
 
-    <p>O que acontece é que existe uma diferença real, neurológica e mensurável entre <em>querer fazer algo</em> e <em>conseguir iniciar e sustentar a ação</em> de fazer aquilo. Em cérebros neurotípicos, querer e fazer estão razoavelmente conectados. Em cérebros com TDAH, há uma falha sistemática nessa ponte — chamada de "função executiva".</p>
+    <h2>A diferença entre não conseguir e não querer</h2>
 
-    <p>A função executiva é o conjunto de processos cognitivos responsáveis por:</p>
+    <p>Pergunta qualquer mulher com TDAH: "você queria ter terminado aquele projeto a tempo?" A resposta vai ser sim. Sempre sim. Não existe, em nenhum lugar dentro dela, vontade de falhar.</p>
+
+    <p>O que acontece é diferente. Existe uma falha real, neurológica, na ponte entre <em>querer fazer</em> e <em>conseguir começar e sustentar</em> a ação. Em cérebros neurotípicos, querer e fazer estão razoavelmente conectados. Em cérebros com TDAH, essa conexão é frágil. Tem nome técnico: função executiva.</p>
+
+    <p>A função executiva é o que te ajuda a:</p>
 
     <ul class="bullet">
-      <li>Iniciar uma tarefa quando não há urgência externa</li>
+      <li>Iniciar uma tarefa quando não tem urgência externa</li>
       <li>Manter a atenção em algo que não é estimulante</li>
-      <li>Lembrar do que precisa ser feito sem lembretes externos</li>
-      <li>Estimar quanto tempo algo vai levar (a famosa "cegueira temporal")</li>
-      <li>Organizar passos em sequência lógica</li>
-      <li>Resistir a estímulos mais imediatos e atrativos</li>
-      <li>Regular a intensidade emocional das reações</li>
+      <li>Lembrar do que precisa ser feito sem alerta no celular</li>
+      <li>Estimar quanto tempo algo vai levar</li>
+      <li>Resistir a distrações mais imediatas e atrativas</li>
+      <li>Regular a intensidade emocional das suas reações</li>
     </ul>
 
-    <p>Tudo isso acontece, em pessoas com TDAH, com uma eficiência reduzida. Não com vontade reduzida. A diferença é absoluta.</p>
+    <p>Isso tudo acontece em pessoas com TDAH com eficiência reduzida. Não com vontade reduzida. A diferença é tudo.</p>
 
-    <div class="box box-warning">
-      <div class="box-eyebrow">Reflexão</div>
-      <p style="margin: 0;">Pense em algo que você adia há semanas. Agora pense em algo que você fez ontem mesmo, mesmo cansada, sem precisar pensar duas vezes. A diferença entre as duas situações raramente é "vontade" — é a quantidade de função executiva que cada uma exigiu de você.</p>
+    <div class="box box-action">
+      <div class="box-eyebrow">Faça agora · 2 minutos</div>
+      <p style="margin: 0; font-size: 10pt;">Pega 3 coisas que você adia há semanas. Escreve no celular. Agora pega 3 coisas que você fez ontem mesmo, sem pensar duas vezes. Olha pra diferença. Não é "vontade". É a quantidade de função executiva que cada uma exigiu de você.</p>
     </div>
-
-    <h2>O que muda quando a narrativa muda</h2>
-
-    <p>Renomear o que está acontecendo não é semântica vazia. Tem efeito clínico mensurável. Estudos com adultos diagnosticados tardiamente mostram que a simples compreensão correta do próprio funcionamento — antes mesmo de qualquer tratamento medicamentoso ou psicoterápico — já reduz sintomas de ansiedade e depressão associados.</p>
-
-    <p>Por uma razão simples: você para de gastar metade da sua energia diária se julgando.</p>
-
-    <p>Essa energia, redirecionada, é o que torna possível tudo o que vem nos próximos capítulos. Você não vai construir uma rotina nova enquanto continuar achando que o problema é seu caráter. Não dá. A culpa é uma motivação que dura 72 horas — depois disso, ela vira paralisia.</p>
-
-    <p>O primeiro passo, então, não é técnico. É narrativo.</p>
   </div>
   <div class="page-footer">
-    <span>jessicasoutomaior.com</span>
-    <span>10</span>
+    <span>raizpsi.com.br</span>
+    <span class="ig">@jessicasoutomaior</span>
+    <span>8</span>
   </div>
 </div>
 
-<!-- ============== CAPÍTULO 1 - PG 3 (Exercício) ============== -->
+<!-- ============== CAPÍTULO 2 - QUIZ ASRS ============== -->
 <div class="page">
   <div class="page-header">
-    <span class="brand">Parte I · Você não é preguiçosa</span>
-    <span>Capítulo 1</span>
+    <span class="brand">Parte I · Não é culpa sua</span>
+    <span>Capítulo 2</span>
   </div>
   <div class="page-content">
-    <h2 style="margin-top: 0;">Exercício de fechamento do capítulo</h2>
+    <h1 class="chapter-num">Capítulo Dois</h1>
+    <h1 class="chapter-title">Quiz ASRS-18.</h1>
 
-    <p>Antes de seguir para o próximo capítulo, faça este exercício curto. Leva entre 5 e 10 minutos. Não pule — ele ancora tudo o que vem depois.</p>
-
-    <div class="box box-exercise">
-      <div class="box-eyebrow">Exercício 1.1 · Renomeação</div>
-      <div class="box-title">Liste e renomeie</div>
-
-      <p style="font-size: 10pt; line-height: 1.55; margin-bottom: 4mm;">Pegue uma folha de papel ou abra um documento. Faça duas colunas. Na coluna da esquerda, escreva 5 frases que você costuma falar (ou pensar) sobre si mesma quando algo dá errado. Sem censura. Use as palavras reais que aparecem na sua cabeça.</p>
-
-      <p style="font-size: 10pt; line-height: 1.55; margin-bottom: 4mm;">Na coluna da direita, traduza cada uma para uma descrição funcional do que efetivamente aconteceu. Sem julgamento moral. Apenas o fato.</p>
-
-      <table style="width: 100%; border-collapse: collapse; font-family: 'Inter', sans-serif; font-size: 9pt; margin-top: 4mm;">
-        <thead>
-          <tr style="background: var(--terracota); color: var(--areia);">
-            <th style="padding: 3mm; text-align: left; border: 1px solid var(--linha);">Narrativa antiga (julgamento)</th>
-            <th style="padding: 3mm; text-align: left; border: 1px solid var(--linha);">Narrativa funcional (fato)</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td style="padding: 3mm; border: 1px solid var(--linha);">"Eu sou uma irresponsável, esqueci de novo."</td>
-            <td style="padding: 3mm; border: 1px solid var(--linha);">"Não tinha lembrete externo, e a minha memória de trabalho falhou."</td>
-          </tr>
-          <tr>
-            <td style="padding: 3mm; border: 1px solid var(--linha);">"Eu sou um caos."</td>
-            <td style="padding: 3mm; border: 1px solid var(--linha);">"Não construí ainda um sistema externo de organização que funcione pra mim."</td>
-          </tr>
-          <tr>
-            <td style="padding: 3mm; border: 1px solid var(--linha);">"Sou preguiçosa."</td>
-            <td style="padding: 3mm; border: 1px solid var(--linha);">"Tenho dificuldade de iniciar tarefas que não geram dopamina imediata."</td>
-          </tr>
-        </tbody>
-      </table>
-
-      <p style="font-size: 10pt; line-height: 1.55; margin-top: 4mm; margin-bottom: 0;"><strong>Importante:</strong> a narrativa funcional não é desculpa. Ela apenas descreve o que está acontecendo de forma precisa o suficiente para que você possa fazer algo a respeito. Você não conserta um problema que está nomeado errado.</p>
+    <div class="resumo">
+      <div class="resumo-label">Resumo em 30 segundos</div>
+      <p class="resumo-text">A escala ASRS-18 é o instrumento mais usado no mundo para triagem de TDAH em adultos. Foi validada pela OMS e é gratuita. Não é diagnóstico, mas indica se faz sentido buscar avaliação completa. Preencha agora, leva 4 minutos.</p>
     </div>
 
-    <h3 style="margin-top: 8mm;">Próximo capítulo</h3>
-    <p>No próximo capítulo, vamos entrar no que efetivamente é o TDAH — não a versão hollywoodiana, nem a versão "todo mundo é um pouco assim", mas o quadro clínico real. Sem jargão.</p>
+    <div class="quiz-table">
+      <div class="quiz-row header">
+        <div></div>
+        <div></div>
+        <div class="header-label">Nunca</div>
+        <div class="header-label">Rara</div>
+        <div class="header-label">Às vezes</div>
+        <div class="header-label">Freq.</div>
+        <div class="header-label">Muito freq.</div>
+      </div>
+
+      <div class="quiz-row">
+        <div class="quiz-num">1</div>
+        <div class="quiz-text">Tem dificuldade pra finalizar os detalhes finais de um projeto, depois que as partes mais difíceis já foram feitas?</div>
+        <div class="quiz-box"></div>
+        <div class="quiz-box"></div>
+        <div class="quiz-box"></div>
+        <div class="quiz-box"></div>
+        <div class="quiz-box"></div>
+      </div>
+
+      <div class="quiz-row">
+        <div class="quiz-num">2</div>
+        <div class="quiz-text">Tem dificuldade pra colocar as coisas em ordem quando precisa fazer uma tarefa que exige organização?</div>
+        <div class="quiz-box"></div>
+        <div class="quiz-box"></div>
+        <div class="quiz-box"></div>
+        <div class="quiz-box"></div>
+        <div class="quiz-box"></div>
+      </div>
+
+      <div class="quiz-row">
+        <div class="quiz-num">3</div>
+        <div class="quiz-text">Tem problemas pra lembrar de compromissos ou obrigações?</div>
+        <div class="quiz-box"></div>
+        <div class="quiz-box"></div>
+        <div class="quiz-box"></div>
+        <div class="quiz-box"></div>
+        <div class="quiz-box"></div>
+      </div>
+
+      <div class="quiz-row">
+        <div class="quiz-num">4</div>
+        <div class="quiz-text">Quando precisa fazer uma tarefa que exige reflexão, evita ou adia o início?</div>
+        <div class="quiz-box"></div>
+        <div class="quiz-box"></div>
+        <div class="quiz-box"></div>
+        <div class="quiz-box"></div>
+        <div class="quiz-box"></div>
+      </div>
+
+      <div class="quiz-row">
+        <div class="quiz-num">5</div>
+        <div class="quiz-text">Se mexe ou se contorce com mãos ou pés quando precisa ficar sentada por muito tempo?</div>
+        <div class="quiz-box"></div>
+        <div class="quiz-box"></div>
+        <div class="quiz-box"></div>
+        <div class="quiz-box"></div>
+        <div class="quiz-box"></div>
+      </div>
+
+      <div class="quiz-row">
+        <div class="quiz-num">6</div>
+        <div class="quiz-text">Se sente excessivamente ativa, com sensação de estar "a mil", como se fosse impulsionada por um motor?</div>
+        <div class="quiz-box"></div>
+        <div class="quiz-box"></div>
+        <div class="quiz-box"></div>
+        <div class="quiz-box"></div>
+        <div class="quiz-box"></div>
+      </div>
+    </div>
+
+    <p style="font-family: 'Inter', sans-serif; font-size: 8.5pt; color: var(--tinta-soft); margin-top: 5mm; font-style: italic;">Continua nas próximas páginas com mais 12 perguntas e a tabela de pontuação.</p>
   </div>
   <div class="page-footer">
-    <span>jessicasoutomaior.com</span>
+    <span>raizpsi.com.br</span>
+    <span class="ig">@jessicasoutomaior</span>
     <span>11</span>
   </div>
 </div>
 
-<!-- ============== CAPÍTULO 4 - QUIZ ASRS ============== -->
+<!-- ============== SISTEMA 1 - APRESENTAÇÃO ============== -->
 <div class="page">
   <div class="page-header">
-    <span class="brand">Parte I · Você não é preguiçosa</span>
-    <span>Capítulo 4</span>
+    <span class="brand">Parte II · Os 7 sistemas</span>
+    <span>Sistema 01</span>
   </div>
   <div class="page-content">
-    <h1 class="chapter-num">Capítulo Quatro</h1>
-    <h1 class="chapter-title">Os 7 sinais que ninguém te falou.</h1>
-
-    <p class="lead">A escala ASRS-18, validada pela Organização Mundial da Saúde, é o instrumento mais usado mundialmente para triagem de TDAH em adultos. Aqui está a versão oficial — preencha agora.</p>
-
-    <p>Esta escala <strong>não é diagnóstico</strong>. É um instrumento de triagem que indica se faz sentido buscar uma avaliação clínica completa. Diagnóstico de TDAH só pode ser feito por profissional habilitado, idealmente com avaliação neuropsicológica.</p>
-
-    <div class="box" style="background: var(--areia); margin-top: 6mm;">
-      <div class="box-eyebrow">Como responder</div>
-      <p style="margin: 0; font-size: 10pt;">Para cada afirmação abaixo, marque a frequência com que ela aconteceu com você nos últimos 6 meses. Seja honesta — não há resposta certa.</p>
+    <div class="tool-header">
+      <div class="tool-num">01</div>
+      <div class="tool-info">
+        <div class="tool-eyebrow">Sistema 1 de 7</div>
+        <div class="tool-title">A Auditoria do Caos</div>
+      </div>
     </div>
 
-    <div style="margin-top: 8mm;">
-      <div class="quiz-scale">
-        <span>Nunca</span>
-        <span>Rara</span>
-        <span>Às vezes</span>
-        <span>Freq.</span>
-        <span>Muito Freq.</span>
-      </div>
+    <div class="tool-meta">
+      <div><strong>Tempo</strong>15 minutos</div>
+      <div><strong>Material</strong>Caneta e papel</div>
+      <div><strong>Quando</strong>Pode ser hoje à noite</div>
+    </div>
 
-      <div class="quiz-q">
-        <span class="q-num">1.</span>
-        <span class="q-text">Com que frequência você tem dificuldade para finalizar os detalhes finais de um projeto, depois que as partes mais desafiadoras já foram feitas?</span>
-        <span class="q-options"><span></span><span></span><span></span><span></span><span></span></span>
-      </div>
+    <div class="resumo">
+      <div class="resumo-label">Pra que serve</div>
+      <p class="resumo-text">Antes de organizar qualquer coisa, você precisa enxergar o caos. Cérebros com TDAH literalmente param de ver a bagunça depois de um tempo (chama "cegueira ambiental"). Esse sistema reativa sua percepção. Em 15 minutos.</p>
+    </div>
 
-      <div class="quiz-q">
-        <span class="q-num">2.</span>
-        <span class="q-text">Com que frequência você tem dificuldade para colocar as coisas em ordem quando precisa fazer uma tarefa que exige organização?</span>
-        <span class="q-options"><span></span><span></span><span></span><span></span><span></span></span>
-      </div>
+    <h2 style="margin-top: 6mm;">Por que isso importa</h2>
 
-      <div class="quiz-q">
-        <span class="q-num">3.</span>
-        <span class="q-text">Com que frequência você tem problemas para lembrar de compromissos ou obrigações?</span>
-        <span class="q-options"><span></span><span></span><span></span><span></span><span></span></span>
-      </div>
+    <p>Você já tentou se organizar antes. Comprou caixa, baixou app, fez planejamento bonito. Durou pouco. Não foi porque você é "indisciplinada". Foi porque você começou a tentar resolver sem antes saber o tamanho do problema.</p>
 
-      <div class="quiz-q">
-        <span class="q-num">4.</span>
-        <span class="q-text">Quando você precisa fazer uma tarefa que exige muita reflexão, com que frequência você evita ou adia o início?</span>
-        <span class="q-options"><span></span><span></span><span></span><span></span><span></span></span>
-      </div>
+    <p>É como tentar limpar uma casa de olhos vendados. Você só esbarra nas coisas.</p>
 
-      <div class="quiz-q">
-        <span class="q-num">5.</span>
-        <span class="q-text">Com que frequência você se mexe ou se contorce com mãos ou pés quando precisa ficar sentada por muito tempo?</span>
-        <span class="q-options"><span></span><span></span><span></span><span></span><span></span></span>
-      </div>
-
-      <div class="quiz-q">
-        <span class="q-num">6.</span>
-        <span class="q-text">Com que frequência você se sente excessivamente ativa ou com a sensação de estar "a mil", como se fosse impulsionada por um motor?</span>
-        <span class="q-options"><span></span><span></span><span></span><span></span><span></span></span>
-      </div>
+    <div class="caso">
+      <div class="caso-label">Caso real</div>
+      <p class="caso-text">A Beatriz, 31, designer, me contou que tinha "três caixas de organização" no quarto. Quando perguntei o que tinha dentro, ela riu: "Não faço ideia. Faz tipo dois anos." Esse é um exemplo perfeito de cegueira ambiental. As caixas viraram parte da paisagem.</p>
+      <p class="caso-disclaimer">Caso composto, baseado em padrões clínicos.</p>
     </div>
   </div>
   <div class="page-footer">
-    <span>jessicasoutomaior.com</span>
-    <span>30</span>
+    <span>raizpsi.com.br</span>
+    <span class="ig">@jessicasoutomaior</span>
+    <span>15</span>
   </div>
 </div>
 
-<!-- ============== APRESENTAÇÃO DO MÉTODO 21 DIAS ============== -->
+<!-- ============== SISTEMA 1 - PRÁTICA ============== -->
 <div class="page">
   <div class="page-header">
-    <span class="brand">Parte III · Plano de 21 Dias</span>
+    <span class="brand">Parte II · Os 7 sistemas</span>
+    <span>Sistema 01 · Prática</span>
+  </div>
+  <div class="page-content">
+    <h2 style="margin-top: 0;">O que fazer agora</h2>
+
+    <p>Pega uma folha (ou abre uma nota no celular). Caminha pela sua casa, ou se mora em apartamento pequeno, fica parada e olha em volta. Responde às 5 perguntas abaixo, honestamente. <strong>Não arruma nada hoje.</strong> Só observa.</p>
+
+    <div class="box box-action">
+      <div class="box-eyebrow">As 5 perguntas</div>
+
+      <p style="font-family: 'Fraunces', serif; font-size: 11pt; line-height: 1.4; margin-bottom: 4mm;"><strong>1.</strong> Quantas superfícies da minha casa estão "tomadas" por coisas que não deveriam estar ali?</p>
+
+      <p style="font-family: 'Fraunces', serif; font-size: 11pt; line-height: 1.4; margin-bottom: 4mm;"><strong>2.</strong> Quais são as 3 coisas que eu mais perco? (chaves, óculos, celular, carteira, fone)</p>
+
+      <p style="font-family: 'Fraunces', serif; font-size: 11pt; line-height: 1.4; margin-bottom: 4mm;"><strong>3.</strong> Qual o cômodo da casa onde eu menos consigo descansar? Por quê?</p>
+
+      <p style="font-family: 'Fraunces', serif; font-size: 11pt; line-height: 1.4; margin-bottom: 4mm;"><strong>4.</strong> Quantos compromissos pendentes eu tenho em diferentes lugares? (WhatsApp, email, papel, na cabeça)</p>
+
+      <p style="font-family: 'Fraunces', serif; font-size: 11pt; line-height: 1.4; margin: 0;"><strong>5.</strong> Em uma palavra, qual o sentimento principal quando eu olho pra minha casa hoje?</p>
+    </div>
+
+    <h3 style="margin-top: 7mm;">Importante</h3>
+    <p>Você vai sentir vontade de começar a arrumar enquanto faz isso. Não arruma. Hoje é só observação. O Sistema 2 (próxima ferramenta) já começa a ação, com método. Confia.</p>
+
+    <h3 style="margin-top: 6mm;">Por que funciona</h3>
+    <p>Cérebros com TDAH têm a característica chamada cegueira ambiental. Você literalmente para de enxergar a bagunça depois de algumas semanas convivendo com ela. Essa observação ativa "reativa" sua percepção visual antes de qualquer ação. É como acender a luz antes de tentar arrumar.</p>
+
+    <div class="box">
+      <div class="box-eyebrow">Resultado esperado</div>
+      <p style="margin: 0; font-size: 10pt;">Ao fim dos 15 minutos, você vai ter clareza sobre exatamente onde o caos está. Essa clareza sozinha já reduz ansiedade. E vai te dar foco pros próximos sistemas.</p>
+    </div>
+  </div>
+  <div class="page-footer">
+    <span>raizpsi.com.br</span>
+    <span class="ig">@jessicasoutomaior</span>
+    <span>16</span>
+  </div>
+</div>
+
+<!-- ============== SISTEMA 2 - PREVIEW ============== -->
+<div class="page">
+  <div class="page-header">
+    <span class="brand">Parte II · Os 7 sistemas</span>
+    <span>Sistema 02</span>
+  </div>
+  <div class="page-content">
+    <div class="tool-header">
+      <div class="tool-num">02</div>
+      <div class="tool-info">
+        <div class="tool-eyebrow">Sistema 2 de 7</div>
+        <div class="tool-title">A Regra do Ponto de Pouso</div>
+      </div>
+    </div>
+
+    <div class="tool-meta">
+      <div><strong>Tempo</strong>10 minutos</div>
+      <div><strong>Material</strong>Bandejinha ou prato fundo</div>
+      <div><strong>Quando</strong>Hoje, ao chegar em casa</div>
+    </div>
+
+    <div class="resumo">
+      <div class="resumo-label">Pra que serve</div>
+      <p class="resumo-text">Você nunca mais vai perder chave, óculos ou cartão. Sem app, sem rastreador, sem nada eletrônico. Esse sistema sozinho economiza, em média, 47 minutos por semana de gente com TDAH (sim, alguém calculou isso).</p>
+    </div>
+
+    <h2 style="margin-top: 6mm;">A ideia</h2>
+
+    <p>Toda vez que você entra em casa, suas mãos estão segurando ou guardando 3 a 5 itens "voláteis": chave, celular, carteira, óculos, fone, recibo. Cérebros neurotípicos guardam cada um no lugar correspondente, automaticamente. Cérebros com TDAH largam o que está na mão no primeiro lugar conveniente, e depois não lembram onde.</p>
+
+    <p>O Ponto de Pouso é uma rendição inteligente. Em vez de tentar lembrar de guardar tudo no lugar certo, você aceita que vai largar e cria <strong>um único lugar</strong> onde tudo é largado. Sempre.</p>
+
+    <div class="caso">
+      <div class="caso-label">Caso real</div>
+      <p class="caso-text">A Renata, 41, médica, perdia o estetoscópio em casa pelo menos 2 vezes por mês. Botou uma bandeja de madeira na entrada. Em 30 dias, perdeu zero vezes. Ela me disse na sessão: "É ridículo como uma coisa tão boba mudou minha rotina."</p>
+      <p class="caso-disclaimer">Caso composto.</p>
+    </div>
+
+    <p style="font-family: 'Inter', sans-serif; font-size: 9pt; color: var(--tinta-soft); margin-top: 6mm; font-style: italic; text-align: center;">A explicação completa do sistema, com instruções passo a passo, está nas próximas 2 páginas do ebook.</p>
+  </div>
+  <div class="page-footer">
+    <span>raizpsi.com.br</span>
+    <span class="ig">@jessicasoutomaior</span>
+    <span>19</span>
+  </div>
+</div>
+
+<!-- ============== AMOSTRA SISTEMAS 3-7 ============== -->
+<div class="page">
+  <div class="page-header">
+    <span class="brand">Parte II · Os 7 sistemas</span>
     <span>Visão geral</span>
   </div>
   <div class="page-content">
-    <h1 class="chapter-num">O Método</h1>
-    <h1 class="chapter-title">21 dias, 3 semanas, 1 transformação realista.</h1>
+    <h1 class="chapter-num">Os outros sistemas</h1>
+    <h1 class="chapter-title">O que vem nas próximas páginas.</h1>
 
-    <p class="lead">O método foi construído sobre uma premissa central: o cérebro com TDAH não responde a esforços de longa duração. Ele responde a ciclos curtos com vitórias visíveis.</p>
+    <p style="font-style: italic; color: var(--tinta-soft); margin-bottom: 6mm;">Esse é um esboço. Cada sistema abaixo ocupa 3 a 4 páginas no ebook completo, com explicação, caso real, passo a passo e box de ação rápida.</p>
 
-    <h2>A arquitetura</h2>
-
-    <div style="display: grid; grid-template-columns: 1fr; gap: 4mm; margin-top: 6mm;">
-      <div class="box" style="border-left: 4px solid var(--terracota);">
-        <div class="box-eyebrow">Semana 1 · Dias 1-7</div>
-        <div class="box-title">Reorganizar o ambiente externo</div>
-        <p style="margin: 0; font-size: 10pt;">A primeira semana inteira é dedicada ao mundo fora da sua cabeça. Não vamos mexer em hábitos mentais ainda. Vamos reduzir o número de decisões que seu cérebro precisa tomar por dia, criando sistemas físicos que carregam parte da carga cognitiva por você.</p>
-      </div>
-
-      <div class="box" style="border-left: 4px solid var(--destaque);">
-        <div class="box-eyebrow">Semana 2 · Dias 8-14</div>
-        <div class="box-title">Reorganizar o cérebro</div>
-        <p style="margin: 0; font-size: 10pt;">Com o ambiente externo mais previsível, agora trabalhamos as estratégias mentais: como iniciar tarefas difíceis, como lidar com o tédio que paralisa, como criar âncoras de foco que não dependem de força de vontade.</p>
-      </div>
-
-      <div class="box" style="border-left: 4px solid var(--verde-musgo);">
-        <div class="box-eyebrow">Semana 3 · Dias 15-21</div>
-        <div class="box-title">Sustentabilidade</div>
-        <p style="margin: 0; font-size: 10pt;">A semana mais importante e a que ninguém faz. Mapear o que vai dar errado quando der errado, criar planos B realistas, ter conversas honestas com pessoas próximas, e construir uma rede que sustenta o que você criou.</p>
-      </div>
+    <div class="box" style="border-left: 4px solid var(--terracota);">
+      <div class="box-eyebrow">Sistema 3</div>
+      <div class="box-title">O Cronômetro de 7 Minutos</div>
+      <p style="margin: 0; font-size: 10pt;">Por que o Pomodoro de 25 minutos não funciona pra TDAH, e o que funciona no lugar. Como começar tarefa odiada em 7 minutos cronometrados.</p>
     </div>
 
-    <h3 style="margin-top: 8mm;">O que cada dia tem</h3>
+    <div class="box" style="border-left: 4px solid var(--destaque);">
+      <div class="box-eyebrow">Sistema 4</div>
+      <div class="box-title">A Externalização da Memória</div>
+      <p style="margin: 0; font-size: 10pt;">Como parar de tentar lembrar e começar a registrar. O sistema de captura única que substitui WhatsApp, post-it, email e cabeça.</p>
+    </div>
+
+    <div class="box" style="border-left: 4px solid var(--verde-musgo);">
+      <div class="box-eyebrow">Sistema 5</div>
+      <div class="box-title">O Ritual de Início</div>
+      <p style="margin: 0; font-size: 10pt;">Os 5 minutos antes de começar que mudam tudo. Como sair do estado de paralisia sem precisar de "força de vontade".</p>
+    </div>
+
+    <div class="box" style="border-left: 4px solid var(--terracota);">
+      <div class="box-eyebrow">Sistema 6</div>
+      <div class="box-title">O Mapa da Sua Energia</div>
+      <p style="margin: 0; font-size: 10pt;">Quando você funciona melhor, quando você funciona pior. Por que tentar fazer trabalho difícil às 16h é a receita pro fracasso.</p>
+    </div>
+
+    <div class="box" style="border-left: 4px solid var(--destaque);">
+      <div class="box-eyebrow">Sistema 7</div>
+      <div class="box-title">A Conversa Honesta</div>
+      <p style="margin: 0; font-size: 10pt;">Como falar com parceiro, mãe e chefe sobre como você funciona, sem virar pedido de desculpa nem manual de instruções.</p>
+    </div>
+  </div>
+  <div class="page-footer">
+    <span>raizpsi.com.br</span>
+    <span class="ig">@jessicasoutomaior</span>
+    <span>23</span>
+  </div>
+</div>
+
+<!-- ============== CASO COMPLETO - CAROLINA ============== -->
+<div class="page">
+  <div class="page-header">
+    <span class="brand">Parte III · O que vem depois</span>
+    <span>Caso completo</span>
+  </div>
+  <div class="page-content">
+    <h1 class="chapter-num">A história de uma paciente</h1>
+    <h1 class="chapter-title">Carolina, 38 anos.</h1>
+
+    <p class="lead">Como uma mulher com TDAH não diagnosticado virou paciente da Raiz Psi, aplicou os 7 sistemas, fez avaliação neuropsicológica e hoje sabe quem ela é.</p>
+
+    <p>A Carolina chegou aqui em fevereiro do ano passado. Mãe de duas crianças (8 e 11 anos), advogada com escritório próprio, casada há 13 anos. No primeiro encontro ela me disse: "Eu tô falando contigo porque minha melhor amiga me obrigou. Eu mesma não sei se preciso."</p>
+
+    <p>Na terceira frase ela já estava chorando.</p>
+
+    <h2>O que ela carregava</h2>
+
     <ul class="bullet">
-      <li>Uma única ação principal — não uma lista de 10 coisas</li>
-      <li>Tempo estimado entre 10 e 20 minutos</li>
-      <li>Um template ou ferramenta visual quando aplicável</li>
-      <li>Espaço para anotação no final do dia</li>
-    </ul>
-  </div>
-  <div class="page-footer">
-    <span>jessicasoutomaior.com</span>
-    <span>61</span>
-  </div>
-</div>
-
-<!-- ============== DIA 1 ============== -->
-<div class="page">
-  <div class="page-header">
-    <span class="brand">Semana 1 · Ambiente externo</span>
-    <span>Dia 01</span>
-  </div>
-  <div class="page-content">
-    <div class="day-header">
-      <div class="day-num">01</div>
-      <div class="day-info">
-        <div class="day-week">Semana 1 · Dia 1 de 21</div>
-        <div class="day-title">Auditoria do caos</div>
-      </div>
-    </div>
-
-    <div class="day-meta">
-      <div><strong>Tempo</strong>15 min</div>
-      <div><strong>Material</strong>Caneta + papel</div>
-      <div><strong>Quando</strong>De manhã, ideal</div>
-    </div>
-
-    <p>Antes de organizar qualquer coisa, precisamos saber o que existe pra organizar. A maior parte das tentativas de "se organizar" falha porque a pessoa começa a comprar caixas, baixar apps e fazer planejamentos sem nunca ter parado pra ver, com clareza, o que é o problema.</p>
-
-    <p>Hoje, por 15 minutos, sem julgamento, vamos catalogar o caos.</p>
-
-    <h3>O que fazer agora</h3>
-
-    <p>Pegue uma folha (ou use o template da próxima página). Caminhe pela sua casa — ou, se mora em apartamento pequeno, fique parada e olhe — e responda às perguntas honestamente. Não arrume nada. Só observe.</p>
-
-    <ul class="checklist">
-      <li>Quantas superfícies da minha casa estão "tomadas" por coisas que não deveriam estar ali?</li>
-      <li>Onde estão as 3 coisas que eu mais perco (chaves, óculos, celular, carteira, fone)?</li>
-      <li>Quantos compromissos pendentes eu tenho em diferentes lugares (Whatsapp, email, papel, cabeça)?</li>
-      <li>Qual o cômodo da casa onde eu menos consigo descansar? Por quê?</li>
-      <li>Quantas roupas estão fora do guarda-roupa neste momento?</li>
+      <li>3 prazos atrasados no escritório, todos com clientes importantes</li>
+      <li>Briga semanal com o marido sobre "as coisas em casa"</li>
+      <li>Sentimento constante de estar "devendo" pra todo mundo</li>
+      <li>Insônia há 6 meses</li>
+      <li>Pensamento repetitivo: "eu não sou capaz disso"</li>
+      <li>13 livros de produtividade, todos pela metade</li>
     </ul>
 
-    <div class="box box-warning" style="margin-top: 6mm;">
-      <div class="box-eyebrow">Importante</div>
-      <p style="margin: 0; font-size: 10pt;">Você vai sentir vontade de começar a arrumar enquanto faz isso. Não arrume. Hoje é só observação. Amanhã (Dia 2) começamos a agir, com método. Confie no processo.</p>
-    </div>
+    <p>Ela tinha 38 anos. Era a primeira vez que ela falava sobre isso com alguém que não fosse ela mesma.</p>
 
-    <h3 style="margin-top: 6mm;">Por que esse exercício importa</h3>
-    <p>Cérebros com TDAH têm uma característica chamada "cegueira para o ambiente" — você literalmente para de enxergar a bagunça depois de algumas semanas convivendo com ela. Por isso essa auditoria ativa é essencial: ela "reativa" sua percepção visual antes de qualquer ação.</p>
-  </div>
-  <div class="page-footer">
-    <span>jessicasoutomaior.com</span>
-    <span>63</span>
-  </div>
-</div>
-
-<!-- ============== TEMPLATE - WORKSHEET DIA 1 ============== -->
-<div class="page">
-  <div class="page-header">
-    <span class="brand">Semana 1 · Ambiente externo</span>
-    <span>Dia 01 · Template</span>
-  </div>
-  <div class="page-content">
-    <div class="worksheet">
-      <div class="worksheet-title">Auditoria do Caos</div>
-      <div class="worksheet-sub">Dia 01 · Sem julgamento, só observação · 15 min</div>
-
-      <div style="margin-top: 6mm;">
-        <h3 style="margin-top: 0; color: var(--terracota-dark); font-size: 9pt;">Mapeamento físico</h3>
-
-        <div class="worksheet-row">
-          <span class="worksheet-label">Superfícies tomadas</span>
-          <div>
-            <div class="worksheet-line"></div>
-            <div class="worksheet-line"></div>
-          </div>
-        </div>
-
-        <div class="worksheet-row">
-          <span class="worksheet-label">Coisas que mais perco</span>
-          <div>
-            <div class="worksheet-line"></div>
-            <div class="worksheet-line"></div>
-          </div>
-        </div>
-
-        <div class="worksheet-row">
-          <span class="worksheet-label">Cômodo de menor paz</span>
-          <div>
-            <div class="worksheet-line"></div>
-          </div>
-        </div>
-
-        <h3 style="color: var(--terracota-dark); font-size: 9pt; margin-top: 6mm;">Mapeamento mental</h3>
-
-        <div class="worksheet-row">
-          <span class="worksheet-label">Pendências na cabeça</span>
-          <div>
-            <div class="worksheet-line"></div>
-            <div class="worksheet-line"></div>
-            <div class="worksheet-line"></div>
-          </div>
-        </div>
-
-        <div class="worksheet-row">
-          <span class="worksheet-label">Pendências no celular</span>
-          <div>
-            <div class="worksheet-line"></div>
-            <div class="worksheet-line"></div>
-          </div>
-        </div>
-
-        <div class="worksheet-row">
-          <span class="worksheet-label">Pendências no email</span>
-          <div>
-            <div class="worksheet-line"></div>
-            <div class="worksheet-line"></div>
-          </div>
-        </div>
-
-        <h3 style="color: var(--terracota-dark); font-size: 9pt; margin-top: 6mm;">Sentimento principal hoje</h3>
-
-        <div class="worksheet-row">
-          <span class="worksheet-label">Em uma palavra</span>
-          <div>
-            <div class="worksheet-line"></div>
-          </div>
-        </div>
-
-        <div class="worksheet-row">
-          <span class="worksheet-label">O que mais drena energia</span>
-          <div>
-            <div class="worksheet-line"></div>
-            <div class="worksheet-line"></div>
-          </div>
-        </div>
-      </div>
-
-      <p style="font-family: 'Inter', sans-serif; font-size: 8pt; color: var(--tinta-soft); margin-top: 6mm; text-align: center; font-style: italic;">Guarde esse template. Vamos comparar com o do Dia 21.</p>
+    <div class="caso">
+      <div class="caso-label">A frase que abriu</div>
+      <p class="caso-text">"Eu sempre achei que tava com depressão, sabe? Mas remédio nunca resolveu. Aí esses dias minha amiga viu um vídeo no Instagram falando sobre TDAH em mulher e mandou pra mim. E eu chorei. Porque era exatamente eu."</p>
     </div>
   </div>
   <div class="page-footer">
-    <span>jessicasoutomaior.com</span>
-    <span>64</span>
+    <span>raizpsi.com.br</span>
+    <span class="ig">@jessicasoutomaior</span>
+    <span>43</span>
   </div>
 </div>
 
 <!-- ============== CTA - PRÓXIMO PASSO ============== -->
 <div class="page page-back">
   <div class="page-header" style="border-color: rgba(245, 237, 224, 0.2); color: rgba(245, 237, 224, 0.7);">
-    <span style="color: var(--destaque); font-weight: 600;">TDAH na Vida Real</span>
+    <span style="color: var(--destaque); font-weight: 600;">Raiz Psi</span>
     <span>Próximo passo</span>
   </div>
-  <div class="page-content cta-section" style="display: flex; flex-direction: column; justify-content: center; padding: 8mm 4mm;">
-    <div class="cta-eyebrow">Capítulo 11 · Convite</div>
-    <h1 class="cta-title">E se você precisar<br>de mais que um ebook?</h1>
+  <div class="page-content cta-wrap">
+    <div class="cta-eyebrow">Pra quem chegou até aqui</div>
+    <h1 class="cta-title">E se você sentir<br>que precisa de mais?</h1>
 
-    <p class="cta-text">Esse material foi feito para te dar clareza, ferramentas práticas e um caminho pra começar. Mas ele tem limites — todo material genérico tem.</p>
+    <p class="cta-text">Esse ebook foi feito pra te dar 7 ferramentas que funcionam de verdade, com aplicação imediata. Mas tem coisas que ele não consegue fazer.</p>
 
-    <p class="cta-text">Se ao terminar os 21 dias você sentir que precisa de algo mais profundo, mais individualizado, ou se você simplesmente quer ter certeza do que está acontecendo com você, a Clínica Souto Maior tem profissionais especializadas em TDAH adulto, com avaliação neuropsicológica completa e psicoterapia.</p>
+    <p class="cta-text">Não consegue te dar diagnóstico. Não consegue te ouvir. Não consegue te acompanhar quando der ruim.</p>
+
+    <p class="cta-text">Se ao aplicar esses sistemas você sentir que precisa de algo mais profundo, mais individualizado, ou se simplesmente quer ter clareza sobre o que está acontecendo com você, a Raiz Psi atende exatamente isso.</p>
 
     <a href="#" class="cta-button">Agendar conversa inicial sem custo</a>
 
-    <p class="cta-meta">20 minutos por chamada de vídeo · Com psicóloga registrada<br>Sem compromisso de continuidade</p>
+    <p class="cta-meta">
+      20 minutos · Por chamada de vídeo · Com psicóloga registrada<br>
+      Sem compromisso de continuidade
+    </p>
 
-    <div style="margin-top: 12mm; padding-top: 8mm; border-top: 1px solid rgba(245, 237, 224, 0.15);">
-      <p style="font-family: 'Inter', sans-serif; font-size: 8.5pt; color: rgba(245, 237, 224, 0.6); line-height: 1.6;">
-        A conversa inicial é uma avaliação clínica conduzida por uma psicóloga registrada no CRP. O objetivo é entender o seu caso e te indicar o caminho mais adequado — psicoterapia, avaliação neuropsicológica, encaminhamento médico, ou nenhum atendimento, se for esse o caso.<br><br>
-        <strong style="color: var(--destaque);">Não é uma sessão de venda.</strong> É um espaço para você ser ouvida.
+    <div style="margin-top: 8mm; padding-top: 6mm; border-top: 1px solid rgba(245, 237, 224, 0.15);">
+      <p style="font-family: 'Inter', sans-serif; font-size: 8.5pt; color: rgba(245, 237, 224, 0.7); line-height: 1.6;">
+        A conversa inicial é uma avaliação clínica conduzida por uma psicóloga da equipe Raiz Psi. O objetivo é entender seu caso e indicar o caminho mais adequado: psicoterapia, avaliação neuropsicológica, encaminhamento médico, ou nenhum atendimento, se for o caso.<br><br>
+        <strong style="color: var(--destaque);">Não é uma sessão de venda.</strong> É um espaço pra você ser ouvida.
       </p>
     </div>
   </div>
   <div class="page-footer" style="border-color: rgba(245, 237, 224, 0.2); color: rgba(245, 237, 224, 0.6);">
-    <span>jessicasoutomaior.com</span>
-    <span style="color: var(--destaque);">125</span>
+    <span>raizpsi.com.br</span>
+    <span style="color: var(--destaque);">@jessicasoutomaior</span>
+    <span style="color: var(--destaque);">51</span>
   </div>
 </div>
 
-<!-- ============== SOBRE A AUTORA ============== -->
+<!-- ============== SOBRE ============== -->
 <div class="page">
   <div class="page-header">
-    <span class="brand">TDAH na Vida Real</span>
+    <span class="brand">Raiz Psi</span>
     <span>Sobre</span>
   </div>
   <div class="page-content">
-    <h1 class="chapter-num">Sobre</h1>
-    <h1 class="chapter-title">A autora.</h1>
+    <h1 class="chapter-num">Quem está por trás</h1>
+    <h1 class="chapter-title">Raiz Psi e a autora.</h1>
 
     <div class="author-card">
       <div class="author-photo">JS</div>
       <div class="author-info">
         <h3>Jéssica Souto Maior</h3>
-        <div class="author-credentials">Psicóloga · CRP XX/XXXXX<br>Especialista em [área]</div>
+        <div class="author-credentials">Psicóloga · CRP XX/XXXXX<br>Diretora clínica · Raiz Psi</div>
 
-        <p class="author-bio">Psicóloga clínica e fundadora da Clínica Souto Maior, com atuação em psicoterapia para mulheres adultas e foco em TDAH e quadros ansiosos. Formada pela [universidade], com pós-graduação em [especialização], é referência no atendimento de mulheres que descobriram o TDAH na vida adulta e estão em processo de reconstrução de rotina, autoimagem e relações.</p>
+        <p class="author-bio">Psicóloga clínica e fundadora da Raiz Psi, com atuação em psicoterapia para mulheres adultas e foco em TDAH e quadros ansiosos. À frente da clínica, lidera uma equipe de profissionais especializadas em saúde mental feminina, com atendimento online e presencial.</p>
 
-        <p class="author-bio">À frente da Clínica Souto Maior, lidera uma equipe de profissionais especializadas em saúde mental feminina, com atendimento online e presencial. Acredita que cuidado psicológico de qualidade não pode ser luxo — e estrutura sua clínica para tornar acompanhamento sério acessível para mais mulheres.</p>
+        <p class="author-bio" style="margin-top: 3mm;">Acredita que cuidado psicológico de qualidade não pode ser luxo, e estrutura sua clínica pra tornar acompanhamento sério acessível pra mais mulheres.</p>
       </div>
     </div>
 
-    <h2 style="margin-top: 12mm;">A clínica</h2>
+    <h2 style="margin-top: 10mm;">A Raiz Psi</h2>
 
-    <p>A <strong>Clínica Souto Maior</strong> oferece psicoterapia individual, avaliação neuropsicológica e atendimento especializado nas seguintes áreas: TDAH adulto, transtornos de ansiedade, autoestima, relacionamentos e processos de luto.</p>
+    <p>Atendimento em psicoterapia individual, avaliação neuropsicológica e atendimento especializado em: TDAH adulto, transtornos de ansiedade, autoestima, relacionamentos e processos de luto.</p>
 
     <p>Modalidades: online (todo o Brasil) e presencial.</p>
 
-    <div style="margin-top: 8mm; padding: 6mm; background: var(--areia); border-radius: 6px; font-family: 'Inter', sans-serif; font-size: 9.5pt; line-height: 1.6;">
-      <strong style="color: var(--terracota); display: block; margin-bottom: 2mm;">Como falar com a clínica</strong>
-      Site: jessicasoutomaior.com<br>
-      Páginas específicas: /tdah  ·  /ansiedade  ·  /raizpsi<br>
-      Instagram: @jessicasoutomaior<br>
+    <div style="margin-top: 6mm; padding: 5mm 6mm; background: var(--areia); border-radius: 6px; font-family: 'Inter', sans-serif; font-size: 10pt; line-height: 1.7;">
+      <strong style="color: var(--terracota); display: block; margin-bottom: 2mm; font-size: 10pt;">Como falar com a Raiz Psi</strong>
+      Site: jessicasoutomaior.com/raizpsi<br>
+      Instagram: <strong style="color: var(--terracota);">@jessicasoutomaior</strong><br>
       WhatsApp: (XX) XXXXX-XXXX
     </div>
 
-    <p style="margin-top: 8mm; font-family: 'Fraunces', serif; font-style: italic; font-size: 11pt; text-align: center; color: var(--tinta-soft);">
+    <p style="margin-top: 8mm; font-family: 'Fraunces', serif; font-style: italic; font-size: 11pt; text-align: center; color: var(--tinta-soft); line-height: 1.5;">
       Obrigada por ter chegado até aqui.<br>
       Que você se trate com a mesma gentileza<br>
       que ofereceria a uma amiga querida.
     </p>
   </div>
   <div class="page-footer">
-    <span>jessicasoutomaior.com</span>
-    <span>127</span>
+    <span>raizpsi.com.br</span>
+    <span class="ig">@jessicasoutomaior</span>
+    <span>53</span>
   </div>
 </div>
 
@@ -1351,22 +1355,25 @@
 <div class="page page-cover">
   <div class="cover-wrap" style="justify-content: center; text-align: center;">
     <div style="z-index: 2; position: relative;">
-      <div class="cover-eyebrow" style="margin-bottom: 8mm;">Clínica Souto Maior</div>
-      <h2 style="font-family: 'Fraunces', serif; font-size: 24pt; color: var(--areia); font-weight: 500; line-height: 1.3; margin-bottom: 12mm; font-style: italic;">
+      <div class="cover-brand" style="margin-bottom: 12mm;">Raiz Psi</div>
+      <h2 style="font-family: 'Fraunces', serif; font-size: 22pt; color: var(--areia); font-weight: 500; line-height: 1.35; margin-bottom: 12mm; font-style: italic;">
         "Você não está quebrada.<br>
         Você só estava tentando<br>
         consertar a coisa errada."
       </h2>
       <div style="width: 40mm; height: 1px; background: var(--areia); opacity: 0.4; margin: 0 auto 8mm;"></div>
-      <p style="font-family: 'Inter', sans-serif; font-size: 9pt; letter-spacing: 0.2em; text-transform: uppercase; color: var(--areia); opacity: 0.7;">
-        jessicasoutomaior.com
+      <p style="font-family: 'Inter', sans-serif; font-size: 9pt; letter-spacing: 0.2em; text-transform: uppercase; color: var(--areia); opacity: 0.8;">
+        @jessicasoutomaior
+      </p>
+      <p style="font-family: 'Inter', sans-serif; font-size: 8pt; letter-spacing: 0.2em; text-transform: uppercase; color: var(--areia); opacity: 0.6; margin-top: 2mm;">
+        jessicasoutomaior.com / raizpsi
       </p>
     </div>
   </div>
 </div>
 
 <div class="preview-toolbar">
-  Pré-visualização do ebook (amostra ~12 páginas de ~127)
+  Pré-visualização v2 (Raiz Psi · 7 sistemas)
   <a href="javascript:window.print()">Salvar como PDF</a>
 </div>
 
