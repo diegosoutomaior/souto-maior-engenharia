@@ -4,11 +4,14 @@ Terça 19/mai/2026 às 19h
 ═══════════════════════════════════════════
 
 
-📋 CAPTION (copia daqui e cola no Instagram)
+📋 CAPTION FINAL (copia daqui e cola no Instagram)
 ─────────────────────────────────────────────
 
 Primeiro edifício residencial de Daniel Libeskind construído na América do Sul.
-Reconhecido pela Worth Magazine entre os melhores edifícios residenciais do ano em 2015.
+
+Worth Magazine 2015 — Melhores Edifícios Residenciais do Ano.
+CTBUH 2015 — Featured Project.
+World Architects 2016 — Building of the Year, 3º lugar.
 
 Lajes maciças, grandes vãos, fachada cristalina sem viga aparente —
 os pilares absorvem a carga total do vento.
@@ -30,7 +33,7 @@ ORDEM DOS 8 SLIDES (de cima pra baixo)
 ═══════════════════════════════════════════
 
 1️⃣  HERO — fachada azul completa
-    (a foto que você me mandou hoje)
+    (a foto da fachada que você me mandou hoje)
 
 2️⃣  Card identificação
     arquivo: card-02-identificacao.png
@@ -38,14 +41,14 @@ ORDEM DOS 8 SLIDES (de cima pra baixo)
 3️⃣  Maquete + poster VITRA
     (a foto da maquete no stand de vendas)
 
-4️⃣  Card Worth Magazine
-    arquivo: card-04-worth.png
+4️⃣  Card RECONHECIMENTOS (NOVO — substitui o card Worth antigo)
+    arquivo: card-04-reconhecimentos.png
 
-5️⃣  Escavação com 2 escavadeiras (CAT + Hyundai)
-    (a foto da vala grande com as 2 máquinas)
+5️⃣  Card-foto matte da Escavação CAT + Hyundai
+    arquivo: card-05-escavacao.png (você cria no Canva)
 
-6️⃣  Armadura close com tampinhas vermelhas
-    (a foto técnica do ferro com red caps)
+6️⃣  Armadura close com red caps (cropada vertical)
+    arquivo: card-06-armadura.png (você cria no Canva)
 
 7️⃣  Fachada em obra subindo
     ⚠️ CORTAR a placa "Jardins" do enquadramento
@@ -61,20 +64,18 @@ PASSO A PASSO TERÇA 19/MAI ÀS 19H
 
 PREPARAÇÃO (faça segunda à noite):
 
-1. Salve no seu celular os 3 cards que mandei aqui no chat:
-   • card-02-identificacao.png
-   • card-04-worth.png
-   • card-08-narrativo.png
+1. Salve no seu celular TODOS os arquivos:
+   • card-02-identificacao.png (te mandei)
+   • card-04-reconhecimentos.png (te mandei agora — NÃO usa mais o card-04-worth.png antigo)
+   • card-08-narrativo.png (te mandei)
+   • card-05-escavacao.png (você criou no Canva)
+   • card-06-armadura.png (você criou no Canva)
+   • As 3 fotos verticais cropadas (hero, maquete, fachada-obra)
 
-2. Tenha em mãos as 5 fotos de obra do Vitra
-   (hero + maquete + escavação + armadura + fachada subindo)
+2. Confira que tem 8 arquivos no total
 
-3. Crop a foto 7 (fachada subindo) pra cortar a placa "Jardins"
-   — qualquer app de foto do celular faz isso em 10 segundos
-
-4. Padronize as 5 fotos pra 1080×1350 (formato vertical do Instagram)
-   — apps tipo "InShot" ou "VSCO" fazem isso. Ou no próprio Instagram
-     ele já corta pra retrato.
+3. Cropa a foto 7 (fachada subindo) pra cortar a placa "Jardins"
+   no próprio Canva ou em qualquer app de foto
 
 
 NO MOMENTO DE POSTAR (terça 19h):
@@ -82,14 +83,14 @@ NO MOMENTO DE POSTAR (terça 19h):
 1. Abre o Instagram, clica em "+", escolhe "Publicação"
 
 2. Seleciona as 8 mídias NA ORDEM correta acima
-   (1=hero, 2=card, 3=maquete, 4=card, 5=escavação, 6=armadura,
-    7=fachada subindo, 8=card final)
+   (1=hero, 2=card ID, 3=maquete, 4=card reconhecimentos,
+    5=card-foto escavação, 6=armadura, 7=fachada subindo, 8=card final)
 
 3. Avança até o campo de legenda
 
 4. Cola a CAPTION acima (o bloco de texto entre as linhas tracejadas)
 
-5. Marca @studio_libeskind se quiser (opcional — eles podem repostar)
+5. Marca @studio_libeskind (opcional — eles podem repostar)
 
 6. Marca a JHSF: @jhsf_oficial
 
@@ -100,12 +101,12 @@ NO MOMENTO DE POSTAR (terça 19h):
 NOTAS EDITORIAIS (por que está assim)
 ═══════════════════════════════════════════
 
-✅ Bairro: Itaim Bibi (NÃO Jardins — confirmado em 4 fontes oficiais)
+✅ Bairro: Itaim Bibi (confirmado em fonte primária — site Studio Libeskind)
 ✅ "Primeiro construído" em vez de "único" — defensável
 ✅ Crédito PSA Arquitetura — co-autoria local executiva
 ✅ Detalhe estrutural (pilares-vento) — vocabulário do engenheiro raiz
-✅ 8 slides (não 9) — ritmo editorial premium
-✅ Card Worth próprio (não recorte) — estética controlada
+✅ 3 prêmios em vez de 1 — autoridade visual tripla
+✅ Card próprio dos reconhecimentos — estética controlada
 ✅ Sem hashtag de venda — post é autoridade, não comercial
 
 
