@@ -1,0 +1,291 @@
+═══════════════════════════════════════════════════
+MANUAL CANVA — POST #2 VITRA
+Direção de arte: Diego Souto-Maior
+═══════════════════════════════════════════════════
+
+Lê isso aqui no celular enquanto você opera o Canva no Chrome.
+Cada passo é um clique. Não pula nada. Não improvisa cor.
+
+
+═══════════════════════════════════════════════════
+PARTE 1 — BRAND KIT SOUTO MAIOR
+(faz UMA VEZ na vida, vale pra todos os próximos posts)
+═══════════════════════════════════════════════════
+
+⏱ Tempo: 8 minutos
+🎯 Resultado: nunca mais digitar cor/fonte de novo
+
+
+PASSO 1.1 — Abrir Brand Kit
+─────────────────────────────
+• No Canva, canto inferior esquerdo, clica em "Marca" ou "Brand"
+• Se não aparecer, clica nos 3 traços (menu) → "Brand Hub"
+
+
+PASSO 1.2 — Criar marca "Souto Maior Engenharia"
+─────────────────────────────
+• Clica em "+" ou "Adicionar marca"
+• Nome: Souto Maior Engenharia
+• Confirma
+
+
+PASSO 1.3 — Adicionar cores da marca
+─────────────────────────────
+Clica em "Cores da marca" → "+ Adicionar cor"
+
+Adiciona ESTAS 4 cores nessa ordem (copia o hex exato):
+
+  ████  Preto Profundo
+        #0A0A0A
+        (uso: fundo de cards)
+
+  ████  Dourado Souto Maior
+        #B8975E
+        (uso: borda, acentos, destaques)
+
+  ████  Creme Premium
+        #F4EEE4
+        (uso: texto principal sobre preto)
+
+  ████  Cinza Caqui
+        #8A8275
+        (uso: textos secundários, datas)
+
+
+PASSO 1.4 — Adicionar fontes da marca
+─────────────────────────────
+Clica em "Fontes da marca" → "+ Adicionar"
+
+Procura e adiciona:
+  • Playfair Display Regular (400) — para títulos
+  • Playfair Display Light (300) — para textos longos
+  • Playfair Display Italic (400) — para citações
+
+Marca "Playfair Display Regular" como FONTE PRINCIPAL
+
+
+PASSO 1.5 — Adicionar logo (opcional agora)
+─────────────────────────────
+• Se tiver o monograma SM em PNG transparente, sobe agora
+• Se não tiver, pula — vê depois
+
+
+✅ Brand Kit pronto. Não mexe mais nele.
+
+
+═══════════════════════════════════════════════════
+PARTE 2 — CARD-FOTO MATTE: ESCAVAÇÃO
+(slide 5 do post Vitra)
+═══════════════════════════════════════════════════
+
+⏱ Tempo: 6 minutos
+🎯 Resultado: foto horizontal da escavação dentro de moldura premium
+
+
+PASSO 2.1 — Criar design novo
+─────────────────────────────
+• Botão roxo "Criar um design" (canto superior direito)
+• "Tamanho personalizado"
+• Largura: 1080  /  Altura: 1350  /  Unidade: px
+• Clica "Criar design"
+
+
+PASSO 2.2 — Fundo preto
+─────────────────────────────
+• Painel esquerdo → "Elementos" → "Formas"
+• Arrasta um RETÂNGULO pra dentro do design
+• Estica até cobrir TUDO (1080×1350)
+• Com o retângulo selecionado → painel de cor (canto superior) →
+  cor da marca → escolhe o PRETO PROFUNDO #0A0A0A
+
+
+PASSO 2.3 — Subir a foto da escavação
+─────────────────────────────
+• Painel esquerdo → "Uploads" → "Fazer upload de arquivos"
+• Conecta o OneDrive OU arrasta a foto direto do computador
+• A foto da escavação (CAT + Hyundai) deve aparecer em "Uploads"
+• Arrasta ela pra dentro do design
+
+
+PASSO 2.4 — Dimensionar a foto
+─────────────────────────────
+A foto deve ocupar a área CENTRAL do card.
+
+• Clica na foto → vê os 8 pontos de redimensionamento
+• Largura desejada: 900px
+• Altura: a proporção original da foto (vai ser ~600-675px se for 4:3 ou 16:9)
+• Posiciona CENTRALIZADO horizontalmente
+• Posiciona um pouco ACIMA do centro vertical
+  (deixa mais espaço embaixo pra texto)
+
+Pra centralizar perfeito:
+• Seleciona a foto
+• Menu superior → "Posicionar" → "Centro horizontal"
+
+
+PASSO 2.5 — Adicionar borda dourada na foto
+─────────────────────────────
+• Foto selecionada → menu superior → "Bordas"
+• Estilo: linha sólida
+• Espessura: 2px
+• Cor: DOURADO #B8975E
+• Aplica
+
+
+PASSO 2.6 — Adicionar moldura externa (borda do card)
+─────────────────────────────
+• Painel esquerdo → "Elementos" → "Formas"
+• Arrasta um RETÂNGULO
+• Tamanho: 1004×1274 (deixa 38px de margem em cada lado)
+• Cor de preenchimento: TRANSPARENTE (clica no ícone de cor com traço)
+• Borda: 1.5px sólida, cor DOURADO #B8975E
+• Centraliza no canvas (Posicionar → Centro)
+
+
+PASSO 2.7 — Texto descritivo embaixo da foto
+─────────────────────────────
+• Painel esquerdo → "Texto" → "Adicionar caixa de texto"
+• Posiciona abaixo da foto, no espaço inferior do card
+• Conteúdo do texto (3 linhas):
+
+  Linha 1 (maior, Playfair Display Italic):
+  Escavação · 2012
+
+  Linha 2 (menor, Playfair Display Light, cor cinza caqui):
+  Av. Horácio Lafer, 500
+
+  Linha 3 (menor ainda, cor cinza caqui):
+  Itaim Bibi · São Paulo
+
+• Tamanhos:
+  - Linha 1: 32px, cor CREME #F4EEE4, ITÁLICO
+  - Linhas 2-3: 22px, cor CINZA CAQUI #8A8275
+
+• Alinhamento: centralizado horizontalmente
+
+
+PASSO 2.8 — Conferir e exportar
+─────────────────────────────
+Antes de exportar, confere:
+□ Fundo todo preto
+□ Foto centralizada com borda dourada fina
+□ Moldura externa dourada visível
+□ Texto embaixo legível, alinhado, cores corretas
+
+Pra exportar:
+• Botão "Compartilhar" canto superior direito → "Baixar"
+• Tipo: PNG
+• Tamanho: 1080×1350 (padrão)
+• Qualidade: máxima
+• Baixa
+
+Renomeia o arquivo: card-05-escavacao.png
+
+
+═══════════════════════════════════════════════════
+PARTE 3 — CROP VERTICAL: ARMADURA (a_118)
+(slide 6 do post Vitra)
+═══════════════════════════════════════════════════
+
+⏱ Tempo: 3 minutos
+🎯 Resultado: foto horizontal cortada pra vertical com red caps preservados
+
+
+PASSO 3.1 — Criar design novo
+─────────────────────────────
+• "Criar um design" → "Tamanho personalizado"
+• 1080 × 1350 px → Criar
+
+
+PASSO 3.2 — Subir e posicionar a foto da armadura
+─────────────────────────────
+• Uploads → carrega a foto a_118 (armadura red caps)
+• Arrasta pra dentro do design
+
+
+PASSO 3.3 — Cropar mantendo os red caps no centro
+─────────────────────────────
+• Clica DUAS VEZES na foto (entra em modo crop)
+• Aparecem as bordas da foto + área visível
+• Arrasta a foto pra dentro até que:
+  - Os red caps fiquem CENTRALIZADOS verticalmente
+  - A foto preencha TODO o quadro 1080×1350
+• Clica fora pra confirmar
+
+Importante: prioridade visual = red caps + arranque de pilar.
+O resto (malha lateral) pode sair do enquadramento.
+
+
+PASSO 3.4 — Exportar
+─────────────────────────────
+• Compartilhar → Baixar → PNG → qualidade máxima
+• Renomeia: card-06-armadura.png
+
+
+═══════════════════════════════════════════════════
+PARTE 4 — PADRONIZAR AS OUTRAS FOTOS
+═══════════════════════════════════════════════════
+
+⏱ Tempo: 5 minutos pras 3 fotos restantes
+
+
+Pra cada uma dessas 3 fotos, faz o mesmo processo da Parte 3
+(criar design 1080×1350 + subir foto + crop):
+
+• HERO Vitra (fachada azul completa)
+  - Já é vertical, só ajusta pra 1080×1350
+  - Renomeia: slide-01-hero.png
+
+• Maquete com poster VITRA
+  - Já é vertical
+  - Renomeia: slide-03-maquete.png
+
+• Fachada em obra (a com placa "Jardins")
+  - Já é vertical
+  - ⚠️ AO CROPAR: enquadra de forma que a placa "Jardins" FIQUE FORA
+  - Renomeia: slide-07-fachada-obra.png
+
+
+═══════════════════════════════════════════════════
+PARTE 5 — ORDEM FINAL DOS 8 ARQUIVOS NO CELULAR
+═══════════════════════════════════════════════════
+
+Antes de postar terça 19h, confere que tem TODOS esses arquivos
+salvos no celular, NESSA ORDEM:
+
+1. slide-01-hero.png             ← você criou Parte 4
+2. card-02-identificacao.png     ← eu te mandei
+3. slide-03-maquete.png          ← você criou Parte 4
+4. card-04-worth.png             ← eu te mandei
+5. card-05-escavacao.png         ← você criou Parte 2
+6. card-06-armadura.png          ← você criou Parte 3
+7. slide-07-fachada-obra.png     ← você criou Parte 4 (sem a placa)
+8. card-08-narrativo.png         ← eu te mandei
+
+
+═══════════════════════════════════════════════════
+PARTE 6 — POSTAR (terça 19/mai/2026 às 19h)
+═══════════════════════════════════════════════════
+
+1. Abre Instagram → "+" → "Publicação"
+2. Seleciona os 8 arquivos NA ORDEM acima
+3. Avança até o campo de legenda
+4. Cola a caption do arquivo CAPTION-PRONTA.txt
+5. Marca @studio_libeskind (opcional, eles podem repostar)
+6. Marca @jhsf_oficial
+7. Publica.
+
+
+═══════════════════════════════════════════════════
+SE TRAVAR EM QUALQUER PARTE
+═══════════════════════════════════════════════════
+
+Me manda print do que tá vendo + qual passo travou.
+Resolvo em 30 segundos.
+
+Não improvisa cor (sempre #0A0A0A, #B8975E, #F4EEE4, #8A8275).
+Não improvisa fonte (sempre Playfair Display).
+Não muda tamanho (sempre 1080×1350).
+
+Disciplina visual > criatividade não-pedida.
+A marca é construída na repetição exata.
