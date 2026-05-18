@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Vitra — Card Narrativo Final</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,300;0,400;0,500;1,400&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { background: #1a1a1a; }
+  body {
+    width: 1080px;
+    height: 1350px;
+    background: #0a0a0a;
+    font-family: 'Playfair Display', serif;
+    color: #f4eee4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+  .card {
+    width: 1004px;
+    height: 1274px;
+    border: 1.5px solid #b8975e;
+    padding: 110px 90px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+  }
+  .top, .middle, .bottom {
+    width: 100%;
+  }
+  .stanza {
+    font-weight: 400;
+    font-size: 44px;
+    line-height: 1.45;
+    color: #f4eee4;
+    letter-spacing: 0.015em;
+  }
+  .stanza + .stanza {
+    margin-top: 56px;
+  }
+  .stanza .accent {
+    color: #b8975e;
+  }
+  .rule {
+    width: 80px;
+    height: 1px;
+    background: #b8975e;
+    margin: 56px auto;
+  }
+  .signature {
+    font-weight: 400;
+    font-style: italic;
+    font-size: 30px;
+    letter-spacing: 0.16em;
+    color: #b8975e;
+  }
+</style>
+</head>
+<body>
+  <div class="card">
+    <div class="top">
+      <div class="stanza">
+        Entre 2012 e 2014,<br>
+        conduzi a estrutura<br>
+        do <span class="accent">Edifício Vitra</span><br>
+        pela JHSF.
+      </div>
+    </div>
+    <div class="middle">
+      <div class="stanza">
+        Lajes maciças, grandes vãos,<br>
+        pilares absorvendo<br>
+        a carga total do vento.
+      </div>
+      <div class="rule"></div>
+      <div class="stanza">
+        A engenharia mais densa<br>
+        do projeto Libeskind<br>
+        no Brasil.
+      </div>
+    </div>
+    <div class="bottom">
+      <div class="signature">@soutomaiorengenharia</div>
+    </div>
+  </div>
+</body>
+</html>
